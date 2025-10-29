@@ -1,21 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/posts/16107.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>2025年10月电商心得总结</title>
+    <url>/posts/60198.html</url>
+    <content><![CDATA[<p>转眼2025年已经快过去，记录一下这一年来走过的坑。</p>
+<h1 id="一落千丈的销售额"><a href="#一落千丈的销售额" class="headerlink" title="一落千丈的销售额"></a>一落千丈的销售额</h1><ul>
+<li>开年2月：开年的情况是比较乐观的；</li>
+<li>下降3月：减少一半的利润；</li>
+<li>转折点4月：继续减少一半的利润；</li>
+<li>稍微提升5月：稍有提升；</li>
+<li>急转直下6月：利润负数，618原因，6.23（推广优化）；</li>
+<li>继续下降7月：稍有提升，但是月利润只有1K出头；</li>
+<li>继续下降8月: 利润负数，并且负1K出头，8.15（推广优化结束）；</li>
+<li>改变9月：稍有提升，但是月利润只有2K出头；</li>
+<li>维持10月：对比9月，利润相当，但是销售额和推广费同比上升50%；</li>
+</ul>
+<h1 id="尝试总结的方法"><a href="#尝试总结的方法" class="headerlink" title="尝试总结的方法"></a>尝试总结的方法</h1><p>终极方法：补单与单数无关（1-5单安全，10单不安全），与天数有关（即使1天2单，补3单，无论方式，全删）</p>
+<h2 id="方式1："><a href="#方式1：" class="headerlink" title="方式1："></a>方式1：</h2><p>动销类型：每天上架10款左右，上架当天扫码1单，开礼金，开立减，开直通车最大化限额50；</p>
+<p>结果：动销不错，但是开支巨大，投产差</p>
+<h2 id="方式2："><a href="#方式2：" class="headerlink" title="方式2："></a>方式2：</h2><p>动销类型：每天上架10款左右，上架当天扫码1单，开直通车最大化点击，限额50；</p>
+<p>结果：点击多，但是动销差，半路终止；</p>
+<h2 id="方式3："><a href="#方式3：" class="headerlink" title="方式3："></a>方式3：</h2><p>精刷模式：扫码单、淘口令、淘客全渠道都被清除，但是这跟天数有一定关系，比如XXX、XXXX均为当天上架扫码2单，后续也没有推广介入，没有清除，并且这是在一波当中特别留存的，当初同一波几乎全清；（没有出单的全清，出过单的，只保留1单）</p>
+<p>结论：</p>
+<ul>
+<li><p>当天上架扫码2单，即使没出单，也<strong>没有清除</strong>；</p>
+</li>
+<li><p>连续扫码3天的，即使2单，<strong>没有出单的，清除</strong>；</p>
+</li>
+<li><p>连续扫码3天的，即使2单，<strong>有出单的，只保留一单</strong>；</p>
+</li>
+</ul>
+<h2 id="方式4："><a href="#方式4：" class="headerlink" title="方式4："></a>方式4：</h2><p>报名聚划算、百亿补贴、淘宝秒杀活动</p>
+<p>截止9月17日并没有大效果，截止9月22日并没有大效果，</p>
+<ul>
+<li>淘宝秒杀要求多，不能出现120W、67W超级闪充等字样</li>
+<li>百亿补贴分两种：超链接和商家日常，超链接是不显示店铺进入百亿补贴频道，商家日常是显示店铺并且打标百亿补贴；测试10单就可以报名超链接</li>
+<li>聚划算商家邀请团要求低，但是除了打标聚划算和运费险外，几乎没有任何作用</li>
+<li>百亿补贴商家日常情况下不能开首单礼金和新品礼金，超链接的可以</li>
+</ul>
+<p>结论：活动本身不能带动销量增加，废！</p>
+<h2 id="方式5（9-22测试中）："><a href="#方式5（9-22测试中）：" class="headerlink" title="方式5（9.22测试中）："></a>方式5（9.22测试中）：</h2><p>基于以上方式，可以判断出：</p>
+<ul>
+<li><p>专用流量小，机会小；</p>
+</li>
+<li><p>刷单渠道无关，全稽查；（搜索、扫码、抢先购、淘客、淘口令）</p>
+</li>
+<li><p>刷单跟天数有关，跟单数无关（2-2-2一样稽查），这也是几乎一直以来的通病，之前的动销扫码一单没有稽查，动销扫码两单没有稽查；</p>
+</li>
+<li><p>跟活动无关，特别是聚划算等活动；（单品加运费险可以试下，没有活动费）</p>
+</li>
+<li><p>刷单会稽查，但是不刷单等于慢性死亡，如何在这中间找到平衡最为关键！—9.22 14点前期几乎平线，刷单之后刺激销量增加</p>
+</li>
+</ul>
+<p>下一步计划可以完全跟着上面反着来，如果上面都是坑，那反着来就是！！为了减少测试成本，可以一个慢慢培养测试，拒绝动销类型测试，为了尽快多种方式，一个链接建议一种方式测试</p>
+<p>结果：</p>
+<ul>
+<li><p>10单的一周之后只剩下2单（其中出单2单。）</p>
+</li>
+<li><p>5单的 没有删除</p>
+</li>
+<li><p>刷2单之后没删，再刷5单，就剩下1单了，原来2单也删除；但是与此同一批次的，刷2单后没刷，就没删除。依然保留2单。这说明一次性刷2单后不能再刷</p>
+</li>
+<li><p>一天一次性刷2-5单左右（刷2单保留（再刷删除），刷5单保留，刷10单删除8单；一周时间）主要原因是持续刷了</p>
+</li>
+</ul>
+<h2 id="方式6："><a href="#方式6：" class="headerlink" title="方式6："></a>方式6：</h2><p>基于方式5的测试，可得出2-5单是安全范围，为了确保正确性，基于方式5再测试一个链接10单，一个5单，均为一单2件，一周后也不刷，看是否删除。</p>
+<p>总结：截止10月13日，基本成功，但是没推广的情况下，几乎没有搜索</p>
+<h2 id="方式7："><a href="#方式7：" class="headerlink" title="方式7："></a>方式7：</h2><p>通过达摩盘的市场-竞争关系探测可以获得数据，（即使关闭市场竞争也可以看到竞店每天平均推广花费多少），可以看到同行花费并不少，一个连接爆款都维持在1000以上。</p>
+<p>总结：在维持一定的投产情况下，可以适当增加投入</p>
+<h2 id="方式8：（11月-12月）"><a href="#方式8：（11月-12月）" class="headerlink" title="方式8：（11月-12月）"></a>方式8：（11月-12月）</h2><p>一个月上架4个新品，月初和月底上架，上架当天或者次日，刷5单，每单2件，上完评价之后视情况开全站或者直通车。</p>
+<h2 id="方式9：（春节攻防战2-17）"><a href="#方式9：（春节攻防战2-17）" class="headerlink" title="方式9：（春节攻防战2.17）"></a>方式9：（春节攻防战2.17）</h2><p>以系列为主上架，一天2个链接，一个链接5单，一单2件。专用主要以热门机型或者新机为主。</p>
+<h1 id="同行情况"><a href="#同行情况" class="headerlink" title="同行情况"></a>同行情况</h1><p>2025年几乎都是在强付费，并且是为了那几百块的利润，愿意投入几千的付费，当然这里是说投入5000，利润5500的情况下，净利润500。这在2024年是真的不敢想，2024年在利润5500的情况下，净利润至少还有一半，可想今年的付费比例有多高。</p>
 ]]></content>
+      <tags>
+        <tag>电商</tag>
+      </tags>
   </entry>
 </search>
