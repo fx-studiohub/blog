@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 8.1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.geekland.top","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.25.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="购买了慕课网7七月老师的Java全栈课程，本着花了钱就认真学，在这里分周做笔记，也写一下这个过程遇到的坑（毕竟是一个6年前的课程了），怎么解决的，好在以后方便查看（我可不想看第二遍，也看不下去） Java全栈序章 及时当勉励，岁月不待人  与以往的课程不同，Java全栈课程是把主流的Web技术串在一起，做一个真正的产品； 整个课程分4个阶段，120+小时，覆盖小程序、Vue、Java和Spring">
+<meta property="og:type" content="article">
+<meta property="og:title" content="风袖电商小程序笔记第一周【走进Web全栈工程师】">
+<meta property="og:url" content="https://blog.geekland.top/posts/62286.html">
+<meta property="og:site_name" content="Bambooの博客空间">
+<meta property="og:description" content="购买了慕课网7七月老师的Java全栈课程，本着花了钱就认真学，在这里分周做笔记，也写一下这个过程遇到的坑（毕竟是一个6年前的课程了），怎么解决的，好在以后方便查看（我可不想看第二遍，也看不下去） Java全栈序章 及时当勉励，岁月不待人  与以往的课程不同，Java全栈课程是把主流的Web技术串在一起，做一个真正的产品； 整个课程分4个阶段，120+小时，覆盖小程序、Vue、Java和Spring">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://course.talelin.com/assets/img/11111.787056e4.jpg">
+<meta property="article:published_time" content="2025-11-05T03:36:11.000Z">
+<meta property="article:modified_time" content="2025-11-05T12:40:59.402Z">
+<meta property="article:author" content="Bamboo">
+<meta property="article:tag" content="微信小程序">
+<meta property="article:tag" content="风袖">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://course.talelin.com/assets/img/11111.787056e4.jpg">
+
+
+<link rel="canonical" href="https://blog.geekland.top/posts/62286.html">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.geekland.top/posts/62286.html","path":"posts/62286.html","title":"风袖电商小程序笔记第一周【走进Web全栈工程师】"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>风袖电商小程序笔记第一周【走进Web全栈工程师】 | Bambooの博客空间</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Bambooの博客空间</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java%E5%85%A8%E6%A0%88%E5%BA%8F%E7%AB%A0"><span class="nav-number">1.</span> <span class="nav-text">Java全栈序章</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%95%BF%E6%9C%9F%E8%AF%BE%E7%A8%8B%E8%A7%84%E5%88%92%E4%B8%8E%E5%89%8D%E7%BD%AE%E8%A6%81%E6%B1%82"><span class="nav-number">2.</span> <span class="nav-text">长期课程规划与前置要求</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A%EF%BC%88%E9%A3%8E%E8%A2%96%E7%BB%86%E8%8A%82%E5%88%86%E6%9E%90%EF%BC%89"><span class="nav-number">3.</span> <span class="nav-text">第一次作业（风袖细节分析）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%B3%A8%E5%86%8C%E4%B8%8E%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE"><span class="nav-number">4.</span> <span class="nav-text">小程序注册与新建项目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%A6%96%E9%A1%B5%E5%B8%83%E5%B1%80%E8%AF%A6%E5%B0%BD%E5%88%86%E6%9E%90"><span class="nav-number">5.</span> <span class="nav-text">首页布局详尽分析</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BD%9C%E4%B8%9A%EF%BC%88LinUI%E7%80%91%E5%B8%83%E6%B5%81%EF%BC%89"><span class="nav-number">6.</span> <span class="nav-text">第二次作业（LinUI瀑布流）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E5%BF%85%E9%A1%BB%E6%98%AF%E5%8A%A8%E6%80%81%E7%9A%84CMS%E5%8F%AF%E6%8E%A7"><span class="nav-number">7.</span> <span class="nav-text">项目必须是动态的CMS可控</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#WebStorm%E5%BC%80%E5%8F%91%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BF%85%E5%A4%87%E8%AE%BE%E7%BD%AE-%E5%BA%9F%E5%BC%83"><span class="nav-number">8.</span> <span class="nav-text">WebStorm开发小程序必备设置(废弃)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%B4%E6%97%B6%E8%A1%A5%E5%85%85%EF%BC%9Aappkey%E7%9A%84%E7%94%B3%E8%AF%B7"><span class="nav-number">9.</span> <span class="nav-text">临时补充：appkey的申请</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#appkey%E7%94%B3%E8%AF%B7%E8%AF%BE%E7%A8%8B%E8%A1%A5%E5%85%85%E8%B5%84%E6%96%99"><span class="nav-number">10.</span> <span class="nav-text">appkey申请课程补充资料</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B0%83%E7%94%A8%E6%9C%8D%E5%8A%A1%E7%AB%AFAPI%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE"><span class="nav-number">11.</span> <span class="nav-text">调用服务端API获取数据</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E5%89%8D%E5%BF%85%E5%A4%87%E9%85%8D%E7%BD%AE"><span class="nav-number">12.</span> <span class="nav-text">小程序开发前必备配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%8E%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B0%83%E7%94%A8%E6%9C%8D%E5%8A%A1%E7%AB%AFAPI"><span class="nav-number">13.</span> <span class="nav-text">配置文件与第一次调用服务端API</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%9A%E5%8A%A1%E5%AF%B9%E8%B1%A1%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7"><span class="nav-number">14.</span> <span class="nav-text">业务对象的重要性</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Bamboo"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Bamboo</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.geekland.top/posts/62286.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Bamboo">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bambooの博客空间">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="风袖电商小程序笔记第一周【走进Web全栈工程师】 | Bambooの博客空间">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          风袖电商小程序笔记第一周【走进Web全栈工程师】
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2025-11-05 11:36:11 / 修改时间：20:40:59" itemprop="dateCreated datePublished" datetime="2025-11-05T11:36:11+08:00">2025-11-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A3%8E%E8%A2%96%E7%94%B5%E5%95%86%E5%B0%8F%E7%A8%8B%E5%BA%8F/" itemprop="url" rel="index"><span itemprop="name">风袖电商小程序</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>购买了慕课网7七月老师的Java全栈课程，本着花了钱就认真学，在这里分周做笔记，也写一下这个过程遇到的坑（毕竟是一个6年前的课程了），怎么解决的，好在以后方便查看（我可不想看第二遍，也看不下去）</p>
+<h1 id="Java全栈序章"><a href="#Java全栈序章" class="headerlink" title="Java全栈序章"></a>Java全栈序章</h1><blockquote>
+<p>及时当勉励，岁月不待人</p>
+</blockquote>
+<p>与以往的课程不同，Java全栈课程是把主流的Web技术串在一起，做一个真正的产品；</p>
+<p>整个课程分4个阶段，120+小时，覆盖小程序、Vue、Java和Spring Boot；</p>
+<p>CMS地址：<a target="_blank" rel="noopener" href="http://sleeve.7yue.pro/">http://sleeve.7yue.pro</a> （旧的不能访问）；新访问地址：<a target="_blank" rel="noopener" href="http://sleeve.talelin.com/">http://sleeve.talelin.com/</a>    CMS远比C端开发难，CMS涉及到权限的访问和数据的修改；</p>
+<p>既能做一个有成就感的大项目又能学习技术；</p>
+<p>完整的4阶段：小程序-C端API-CMS前端-CMS-API；大项目建议把C端API和CMS的API分开，如果需要放在一起，建议以CMS为主；</p>
+<p>均衡：小程序-Java Spring Boot-Vue3-CMS</p>
+<h1 id="长期课程规划与前置要求"><a href="#长期课程规划与前置要求" class="headerlink" title="长期课程规划与前置要求"></a>长期课程规划与前置要求</h1><p>非快餐课，长期维护，后续可能增加第二期，比如Spring Cloud；</p>
+<p>前置基础要求：</p>
+<ul>
+<li>小程序要求：JS、CSS、小程序基础、自定义组件、ES6、Promise；（不管基础跟着项目走、自学自补、参考《纯正商业应用微信小程序实战》）</li>
+<li>Java&amp;Java SpringBoot：良好的Java语法基础（注解、接口、类、IOC），MySQL的基础知识</li>
+<li>Vue：有良好的小程序基础Vue其实就差不多的，初中高级Vue技术点会讲到</li>
+</ul>
+<h1 id="第一次作业（风袖细节分析）"><a href="#第一次作业（风袖细节分析）" class="headerlink" title="第一次作业（风袖细节分析）"></a>第一次作业（风袖细节分析）</h1><p>研究线上风袖小程序的功能，制作思维导图；</p>
+<p>重点：SKU和SPU的设计；</p>
+<p>举例1：默认SKU和选择SKU：在淘宝一般都是逛的心态，所以一般不会有默认SKU（当然2025年淘宝是默认SKU的），需要用户自己去选择，而在京东，SKU一般是默认选择好的，用户看中就下单（2025年京东也是以SKU为主）；</p>
+<p>举例2：SKU的规格数量计算：在一些产品上，比如衣服，有3个颜色，每一个颜色都有3个图案，每一个图案有3个尺码，但是其中一个颜色的一个图案库存是0，这个时候就不能让用户去选择这个图案，包括这个图案下面的所有尺码，其他图案可以正常选择；</p>
+<p>举例3：SKU可以被反选；</p>
+<p>举例4：SKU要选择完整才可以购买和加入购物车，否则会提示你需要再选择哪个规格，并且阻止你加购物车或者购买，比如上面衣服例子，只选择颜色和图案，不选尺码，点击加购物车就会提示你请选择尺码；</p>
+<p>举例5：在库存充足的情况下显示库存多少，在库存紧缺的时候，显示仅剩XX件并且标红，营造商品火爆的氛围；</p>
+<p>举例6：在库存只有7件的时候，可以加购7件，但是写到8件，下方的加入购物车或者立即下单就会变成暂时缺货并且禁止点击；</p>
+<p>举例7：可视规格-&gt;SKU图片</p>
+<p>思维导图：</p>
+<p><img src="https://course.talelin.com/assets/img/11111.787056e4.jpg"></p>
+<h1 id="小程序注册与新建项目"><a href="#小程序注册与新建项目" class="headerlink" title="小程序注册与新建项目"></a>小程序注册与新建项目</h1><p>微信公众平台：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/cgi-bin/loginpage?url=/cgi-bin/home/t=home/index&lang=zh_CN">https://mp.weixin.qq.com/cgi-bin/loginpage?url=/cgi-bin/home/t=home/index&amp;lang=zh_CN</a></p>
+<p>小程序注册：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/wxopen/waregister?action=step1&source=mpregister&token=&lang=zh_CN%EF%BC%88%E5%BB%BA%E8%AE%AE%E4%BD%BF%E7%94%A8%E4%BC%81%E4%B8%9A%E8%B5%84%E8%B4%A8%EF%BC%89">https://mp.weixin.qq.com/wxopen/waregister?action=step1&amp;source=mpregister&amp;token=&amp;lang=zh_CN（建议使用企业资质）</a></p>
+<p>获取AppID(小程序ID)：开发与服务-开发管理-开发者ID</p>
+<p>一定要写自己的AppID，否则一些微信接口可能后续无法使用。</p>
+<h1 id="首页布局详尽分析"><a href="#首页布局详尽分析" class="headerlink" title="首页布局详尽分析"></a>首页布局详尽分析</h1><p>主要分析首页的主题和Banner，每周上新有两个，但是Banner的每周上新，每一张图片可以跳转到主题或者商品详情页上去，而主题只需要多了一个查看更多，并且只需要一张入口图，就可以跳转到不同的商品详情页。</p>
+<h1 id="第二次作业（LinUI瀑布流）"><a href="#第二次作业（LinUI瀑布流）" class="headerlink" title="第二次作业（LinUI瀑布流）"></a>第二次作业（LinUI瀑布流）</h1><p>LinUI开源地址：<a target="_blank" rel="noopener" href="https://github.com/TaleLin/lin-ui">https://github.com/TaleLin/lin-ui</a></p>
+<p>LinUI文档：<a target="_blank" rel="noopener" href="https://doc.mini.talelin.com/">https://doc.mini.talelin.com/</a></p>
+<ul>
+<li>安装：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm init</span><br><span class="line">npm install lin-ui</span><br></pre></td></tr></table></figure>
+
+<p>执行成功后，会在根目录里生成项目依赖文件夹 <code>node_modules/lin-ui</code> （小程序IDE的目录结构里不会显示此文件夹）。<br>然后用小程序官方IDE打开我们的小程序项目，找到 <code>工具</code> 选项，点击下拉选中 <code>构建npm</code> ，等待构建完成即可。</p>
+<ul>
+<li><p>根目录创建components文件夹放自定义组件，创建l-demo文件夹放l-demo自定义组件。</p>
+<p>l-demo.js</p>
+<p>在properties添加data，属性值Object来接受父组件传递的数据</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// components/l-demo/l-demo.js</span></span><br><span class="line"><span class="title class_">Component</span>(&#123;</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 组件的属性列表</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attr">properties</span>: &#123;</span><br><span class="line">    <span class="attr">data</span>:<span class="title class_">Object</span><span class="comment">//接受父组件传递的数据</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 组件的初始数据</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 组件的方法列表</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attr">methods</span>: &#123;</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>l-demo.json</p>
+<p>引入组件l-card和l-price</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;component&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;usingComponents&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;l-card&quot;</span><span class="punctuation">:</span><span class="string">&quot;/miniprogram_npm/lin-ui/card/index&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;l-price&quot;</span><span class="punctuation">:</span><span class="string">&quot;/miniprogram_npm/lin-ui/price/index&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>l-demo.wxml</p>
+<p>自定义组件基本结构，这里使用到l-card和l-price这两个组件，一定要引入（当时没有引入l-pric导致显示不了价格）</p>
+<p>这里还需要注意data.XXXX里面不能为空，否则会警告，解决方式就是后面加上|| ‘’</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">l-card</span> <span class="attr">full</span> <span class="attr">type</span>=<span class="string">&quot;cover&quot;</span> <span class="attr">image</span>=<span class="string">&quot;&#123;&#123;data.image|| &#x27;&#x27;&#125;&#125;&quot;</span> <span class="attr">title</span>=<span class="string">&quot;&#123;&#123;data.title|| &#x27;&#x27;&#125;&#125;&quot;</span> <span class="attr">l-class</span>=<span class="string">&quot;life-container&quot;</span> <span class="attr">l-img-class</span>=<span class="string">&quot;life-img&quot;</span> <span class="attr">l-title-class</span>=<span class="string">&quot;life-title&quot;</span> <span class="attr">bindtap</span>=<span class="string">&quot;onProduct&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">&#x27;life-product-contianer&#x27;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">&#x27;art-content&#x27;</span>&gt;</span>&#123;&#123;data.describe&#125;&#125;<span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">&#x27;price-container&#x27;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">l-price</span> <span class="attr">unit</span>=<span class="string">&quot;￥&quot;</span> <span class="attr">value</span>=<span class="string">&quot;&#123;&#123;data.count|| &#x27;&#x27;&#125;&#125;&quot;</span> <span class="attr">value-color</span>=<span class="string">&quot;#ad0e11&quot;</span> <span class="attr">unit-color</span>=<span class="string">&quot;#ad0e11&quot;</span> <span class="attr">value-size</span>=<span class="string">&quot;36&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">l-price</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">l-price</span> <span class="attr">l-class</span>=<span class="string">&quot;del-price&quot;</span> <span class="attr">unit</span>=<span class="string">&quot;￥&quot;</span> <span class="attr">value</span>=<span class="string">&quot;&#123;&#123;data.delCount|| &#x27;&#x27;&#125;&#125;&quot;</span> <span class="attr">value-color</span>=<span class="string">&quot;#ad0e11&quot;</span> <span class="attr">unit-color</span>=<span class="string">&quot;#ad0e11&quot;</span> <span class="attr">deleted</span> <span class="attr">del-color</span>=<span class="string">&quot;#666&quot;</span> <span class="attr">value-color</span>=<span class="string">&quot;#666&quot;</span> <span class="attr">unit-color</span>=<span class="string">&quot;#666&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">l-price</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">l-card</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>l-demo.wxss</p>
+<p>自定义组件样式</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* demo.wxss */</span></span><br><span class="line"><span class="selector-class">.life-container</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">350</span>rpx <span class="meta">!important</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">20</span>rpx <span class="number">0</span> <span class="meta">!important</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#fff</span> <span class="meta">!important</span>;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0px</span> <span class="number">8</span>rpx <span class="number">20</span>rpx <span class="number">0px</span> <span class="built_in">rgba</span>(<span class="number">9</span>, <span class="number">36</span>, <span class="number">66</span>, <span class="number">0.04</span>) <span class="meta">!important</span>;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">16</span>rpx <span class="meta">!important</span>;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">    <span class="attribute">margin-bottom</span>: <span class="number">20</span>rpx;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="selector-class">.life-img</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">350</span>rpx <span class="meta">!important</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">380</span>rpx <span class="meta">!important</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="selector-class">.life-product-contianer</span> &#123;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0</span> <span class="number">10</span>rpx;</span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">    <span class="attribute">flex-direction</span>: column;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="selector-class">.life-title</span> &#123;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">10</span>rpx <span class="meta">!important</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="selector-class">.tag</span> &#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">30</span>rpx <span class="meta">!important</span>;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">30</span>rpx <span class="meta">!important</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="selector-class">.art-content</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">28</span>rpx;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#999</span>;</span><br><span class="line">    <span class="attribute">margin-top</span>: <span class="number">15</span>rpx;</span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">    <span class="attribute">flex-wrap</span>: wrap;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在根目录创建文件夹img，存放一张名为demo.png的图片</p>
+</li>
+<li><p>修改page&#x2F;index页面</p>
+<p>index.js</p>
+<p>这里需要注意：&#x2F;img&#x2F;demo.png，要写相对路径不能写绝对路径</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// pages/index/index.js</span></span><br><span class="line"><span class="title class_">Page</span>(&#123;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 页面的初始数据</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">demo</span>:[&#123;</span><br><span class="line">        <span class="attr">image</span>: <span class="string">&#x27;/img/demo.png&#x27;</span>,</span><br><span class="line">        <span class="attr">title</span>: <span class="string">&#x27;显瘦中长款系带风衣&#x27;</span>,</span><br><span class="line">        <span class="attr">describe</span>: <span class="string">&#x27;柔软顺滑、上身挺括显瘦，垂坠飘逸、不易皱好打理。&#x27;</span>,</span><br><span class="line">        <span class="attr">count</span>: <span class="string">&#x27;888&#x27;</span>,</span><br><span class="line">        <span class="attr">delCount</span>: <span class="string">&#x27;666&#x27;</span></span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">image</span>: <span class="string">&#x27;/img/demo.png&#x27;</span>,</span><br><span class="line">        <span class="attr">title</span>: <span class="string">&#x27;显瘦中长款系带风衣&#x27;</span>,</span><br><span class="line">        <span class="attr">describe</span>: <span class="string">&#x27;柔软顺滑、上身挺括显瘦，垂坠飘逸、不易皱好打理。柔软顺滑、上身挺括显瘦，垂坠飘逸、不易皱好打理。&#x27;</span>,</span><br><span class="line">        <span class="attr">count</span>: <span class="string">&#x27;888&#x27;</span>,</span><br><span class="line">        <span class="attr">delCount</span>: <span class="string">&#x27;666&#x27;</span></span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">image</span>: <span class="string">&#x27;/img/demo.png&#x27;</span>,</span><br><span class="line">        <span class="attr">title</span>: <span class="string">&#x27;显瘦中长款系带风衣&#x27;</span>,</span><br><span class="line">        <span class="attr">describe</span>: <span class="string">&#x27;柔软顺滑、上身挺括显瘦，垂坠飘逸、不易皱好打理。&#x27;</span>,</span><br><span class="line">        <span class="attr">count</span>: <span class="string">&#x27;888&#x27;</span>,</span><br><span class="line">        <span class="attr">delCount</span>: <span class="string">&#x27;666&#x27;</span></span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">image</span>: <span class="string">&#x27;/img/demo.png&#x27;</span>,</span><br><span class="line">        <span class="attr">title</span>: <span class="string">&#x27;显瘦中长款系带风衣&#x27;</span>,</span><br><span class="line">        <span class="attr">describe</span>: <span class="string">&#x27;柔软顺滑、上身挺括显瘦，垂坠飘逸、不易皱好打理。&#x27;</span>,</span><br><span class="line">        <span class="attr">count</span>: <span class="string">&#x27;888&#x27;</span>,</span><br><span class="line">        <span class="attr">delCount</span>: <span class="string">&#x27;666&#x27;</span></span><br><span class="line">      &#125;]</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 生命周期函数--监听页面加载</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="title function_">onLoad</span>(<span class="params">options</span>) &#123;</span><br><span class="line">    wx.<span class="property">lin</span>.<span class="title function_">renderWaterFlow</span>(<span class="variable language_">this</span>.<span class="property">data</span>.<span class="property">demo</span>, <span class="literal">false</span> ,<span class="function">()=&gt;</span>&#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;渲染成功&#x27;</span>)</span><br><span class="line">      &#125;)</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 生命周期函数--监听页面初次渲染完成</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="title function_">onReady</span>(<span class="params"></span>) &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 生命周期函数--监听页面显示</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="title function_">onShow</span>(<span class="params"></span>) &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 生命周期函数--监听页面隐藏</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="title function_">onHide</span>(<span class="params"></span>) &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 生命周期函数--监听页面卸载</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="title function_">onUnload</span>(<span class="params"></span>) &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 页面相关事件处理函数--监听用户下拉动作</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="title function_">onPullDownRefresh</span>(<span class="params"></span>) &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 页面上拉触底事件的处理函数</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="title function_">onReachBottom</span>(<span class="params"></span>) &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 用户点击右上角分享</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="title function_">onShareAppMessage</span>(<span class="params"></span>) &#123;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>index.json</p>
+<p>引入组件这里引入了瀑布流和自定义两个组件，可以在index页面使用</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;usingComponents&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;l-water-flow&quot;</span><span class="punctuation">:</span><span class="string">&quot;/miniprogram_npm/lin-ui/water-flow/index&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;l-demo&quot;</span><span class="punctuation">:</span><span class="string">&quot;/components/l-demo/l-demo&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>index.wxml</p>
+<p>使用自定义组件：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">l-water-flow</span> <span class="attr">generic:l-water-flow-item</span>=<span class="string">&quot;l-demo&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>至此使用linui瀑布流基本结束！</p>
+<h1 id="项目必须是动态的CMS可控"><a href="#项目必须是动态的CMS可控" class="headerlink" title="项目必须是动态的CMS可控"></a>项目必须是动态的CMS可控</h1><p>一个真实可用的项目，不会在本地写死图片和数据的，比如首页的活动图片，今天可能是这个活动，后天是另外活动，图片数据这些都是可以变化的，一切都是由后端的CMS决定的。</p>
+<h1 id="WebStorm开发小程序必备设置-废弃"><a href="#WebStorm开发小程序必备设置-废弃" class="headerlink" title="WebStorm开发小程序必备设置(废弃)"></a>WebStorm开发小程序必备设置(废弃)</h1><p>不使用WebStorm来开发小程序，改用为vscode，这里使用的是大前端Brian老师的vscode插件，可以在根目录创建.prettierrc文件，就可以实现文件保存自动格式化的功能：</p>
+<p>.prettierrc</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;overrides&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;files&quot;</span><span class="punctuation">:</span> <span class="string">&quot;*.wxml&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;options&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span> <span class="attr">&quot;parser&quot;</span><span class="punctuation">:</span> <span class="string">&quot;html&quot;</span> <span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;files&quot;</span><span class="punctuation">:</span> <span class="string">&quot;*.wxss&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;options&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span> <span class="attr">&quot;parser&quot;</span><span class="punctuation">:</span> <span class="string">&quot;css&quot;</span> <span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;files&quot;</span><span class="punctuation">:</span> <span class="string">&quot;*.wxs&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;options&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span> <span class="attr">&quot;parser&quot;</span><span class="punctuation">:</span> <span class="string">&quot;babel&quot;</span> <span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="临时补充：appkey的申请"><a href="#临时补充：appkey的申请" class="headerlink" title="临时补充：appkey的申请"></a>临时补充：appkey的申请</h1><p>之前的是<a target="_blank" rel="noopener" href="http://7yue.pro/">http://7yue.pro</a></p>
+<p>现在改为：<a target="_blank" rel="noopener" href="https://talelin.unna.com.cn/">https://talelin.unna.com.cn</a>    其实截止2025年已经废弃最新的还是<a target="_blank" rel="noopener" href="https://talelin.com/">https://talelin.com/</a></p>
+<h1 id="appkey申请课程补充资料"><a href="#appkey申请课程补充资料" class="headerlink" title="appkey申请课程补充资料"></a>appkey申请课程补充资料</h1><p>打开：<a target="_blank" rel="noopener" href="https://talelin.com/course">https://talelin.com/course</a>    注册登录，获取开发者key，需要使用慕课网ID</p>
+<p>API文档：<a target="_blank" rel="noopener" href="https://course.talelin.com/lin/sleeve/">https://course.talelin.com/lin/sleeve/</a></p>
+<h1 id="调用服务端API获取数据"><a href="#调用服务端API获取数据" class="headerlink" title="调用服务端API获取数据"></a>调用服务端API获取数据</h1><p>根目录下创建config文件夹，config文件夹下创建config.js文件，作为配置文件</p>
+<p>config.js</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> config = &#123;</span><br><span class="line">  <span class="attr">appkey</span>: <span class="string">&quot;yourappid&quot;</span>,</span><br><span class="line">  <span class="attr">apiBase</span>: <span class="string">&quot;http://se.talelin.com/&quot;</span>,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">export</span> &#123; config &#125;;</span><br></pre></td></tr></table></figure>
+
+<p>一个完整的网络get请求：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">onLoad</span>(<span class="params">options</span>) &#123;</span><br><span class="line">  wx.<span class="title function_">request</span>(&#123;</span><br><span class="line">    <span class="attr">url</span>: <span class="string">&quot;http://se.talelin.com/v1/theme/by/names&quot;</span>,</span><br><span class="line">    <span class="attr">method</span>: <span class="string">&quot;GET&quot;</span>,</span><br><span class="line">    <span class="attr">data</span>: &#123;</span><br><span class="line">      <span class="attr">names</span>: <span class="string">&quot;t-1&quot;</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">header</span>: &#123;</span><br><span class="line">      <span class="attr">appkey</span>: <span class="string">&quot;yourappid&quot;</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<h1 id="小程序开发前必备配置"><a href="#小程序开发前必备配置" class="headerlink" title="小程序开发前必备配置"></a>小程序开发前必备配置</h1><p>需要开启不校验合法域名、web-view(业务域名)、TLS版本以及 HTTPS 证书</p>
+<h1 id="配置文件与第一次调用服务端API"><a href="#配置文件与第一次调用服务端API" class="headerlink" title="配置文件与第一次调用服务端API"></a>配置文件与第一次调用服务端API</h1><p>上面写了config配置文件，接下来用这个配置文件来完成调用后端的API接口。</p>
+<p>home.js</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// pages/home/home.js</span></span><br><span class="line"><span class="keyword">import</span> &#123; config &#125; <span class="keyword">from</span> <span class="string">&quot;../../config/config&quot;</span>;</span><br><span class="line"><span class="title class_">Page</span>(&#123;</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 页面的初始数据</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">topTheme</span>: <span class="literal">null</span>,</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 生命周期函数--监听页面加载</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="title function_">onLoad</span>(<span class="params">options</span>) &#123;</span><br><span class="line">    wx.<span class="title function_">request</span>(&#123;</span><br><span class="line">      <span class="attr">url</span>: <span class="string">`<span class="subst">$&#123;config.apiBaseUrl&#125;</span>theme/by/names`</span>,</span><br><span class="line">      <span class="attr">method</span>: <span class="string">&quot;GET&quot;</span>,</span><br><span class="line">      <span class="attr">data</span>: &#123;</span><br><span class="line">        <span class="attr">names</span>: <span class="string">&quot;t-1&quot;</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="attr">header</span>: &#123;</span><br><span class="line">        <span class="attr">appkey</span>: config.<span class="property">appkey</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="attr">success</span>: <span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// console.log(res);</span></span><br><span class="line">        <span class="variable language_">this</span>.<span class="title function_">setData</span>(&#123;</span><br><span class="line">          <span class="attr">topTheme</span>: res.<span class="property">data</span>[<span class="number">0</span>],</span><br><span class="line">        &#125;);</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 生命周期函数--监听页面初次渲染完成</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="title function_">onReady</span>(<span class="params"></span>) &#123;&#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 生命周期函数--监听页面显示</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="title function_">onShow</span>(<span class="params"></span>) &#123;&#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 生命周期函数--监听页面隐藏</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="title function_">onHide</span>(<span class="params"></span>) &#123;&#125;,</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 生命周期函数--监听页面卸载</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="title function_">onUnload</span>(<span class="params"></span>) &#123;&#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 页面相关事件处理函数--监听用户下拉动作</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="title function_">onPullDownRefresh</span>(<span class="params"></span>) &#123;&#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 页面上拉触底事件的处理函数</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="title function_">onReachBottom</span>(<span class="params"></span>) &#123;&#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 用户点击右上角分享</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="title function_">onShareAppMessage</span>(<span class="params"></span>) &#123;&#125;,</span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>home.wxml</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"><!-- pages/home/home.wxml --></span></span><br><span class="line"><span class="tag">&lt;<span class="name">view</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">image</span> <span class="attr">class</span>=<span class="string">&quot;top-theme&quot;</span> <span class="attr">src</span>=<span class="string">&quot;&#123;&#123;topTheme.entrance_img&#125;&#125;&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="业务对象的重要性"><a href="#业务对象的重要性" class="headerlink" title="业务对象的重要性"></a>业务对象的重要性</h1>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" rel="tag"># 微信小程序</a>
+              <a href="/tags/%E9%A3%8E%E8%A2%96/" rel="tag"># 风袖</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/posts/60198.html" rel="next" title="2025年10月电商心得总结">
+                  2025年10月电商心得总结 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="lv-container" data-id="city" data-uid="MTAyMC82MDk3Ny8zNzQ0Nw"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">粤ICP备2024276010号-2 </a>
+      <img src="/images/%E5%A4%87%E6%A1%88%E7%BC%96%E5%8F%B7%E5%9B%BE%E6%A0%87.png" alt="">
+  </div>
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Bambooの博客空间</span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<script src="/js/third-party/comments/livere.js" defer></script>
+
+</body>
+</html>
