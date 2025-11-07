@@ -166,13 +166,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -194,6 +194,97 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://blog.geekland.top/posts/9887.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Bamboo">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bambooの博客空间">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | Bambooの博客空间">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/posts/9887.html" class="post-title-link" itemprop="url">理解javascript回调函数</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2025-11-06 09:18:02 / 修改时间：23:05:37" itemprop="dateCreated datePublished" datetime="2025-11-06T09:18:02+08:00">2025-11-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A3%8E%E8%A2%96%E7%94%B5%E5%95%86%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA/" itemprop="url" rel="index"><span itemprop="name">风袖电商小程序查漏补缺</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>在学习到风袖小程序调用后端api的接口时候涉及到一个不可以避免的知识点，<strong>回调函数</strong>，在微信小程序开发文档中已经清晰写明了如何去发起网络请求：</p>
+<p>文档地址：<a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/api/network/request/wx.request.html">https://developers.weixin.qq.com/miniprogram/dev/api/network/request/wx.request.html</a></p>
+<p>示例：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"> <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">topTheme</span>: <span class="literal">null</span>,</span><br><span class="line">  &#125;,</span><br><span class="line"><span class="title function_">onLoad</span>(<span class="params">options</span>) &#123;</span><br><span class="line">    wx.<span class="title function_">request</span>(&#123;</span><br><span class="line">      <span class="attr">url</span>: <span class="string">&quot;your url&quot;</span>,</span><br><span class="line">      <span class="attr">method</span>: <span class="string">&quot;GET&quot;</span>,</span><br><span class="line">      <span class="attr">data</span>: &#123;</span><br><span class="line">        <span class="attr">names</span>: <span class="string">&quot;t-1&quot;</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="attr">header</span>: &#123;</span><br><span class="line">        <span class="attr">appkey</span>: <span class="string">&quot;yourappid&quot;</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="attr">success</span>: <span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// console.log(res);</span></span><br><span class="line">        <span class="variable language_">this</span>.<span class="title function_">setData</span>(&#123;</span><br><span class="line">          <span class="attr">topTheme</span>: res.<span class="property">data</span>[<span class="number">0</span>],</span><br><span class="line">        &#125;);  </span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+
+<p>在这个示例中，页面加载的时候发起了一次请求，请求类型是GET，携带参数是t-1，header携带的是appkey，success是成功调用接口，接口返回的数据，通过</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/9887.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -231,9 +322,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2025-11-05 11:36:11 / 修改时间：20:40:59" itemprop="dateCreated datePublished" datetime="2025-11-05T11:36:11+08:00">2025-11-05</time>
+      <time title="创建时间：2025-11-05 11:36:11" itemprop="dateCreated datePublished" datetime="2025-11-05T11:36:11+08:00">2025-11-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-11-07 10:02:54" itemprop="dateModified" datetime="2025-11-07T10:02:54+08:00">2025-11-07</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">

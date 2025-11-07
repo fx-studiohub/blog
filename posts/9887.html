@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 8.1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.geekland.top","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.25.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="在学习到风袖小程序调用后端api的接口时候涉及到一个不可以避免的知识点，回调函数，在微信小程序开发文档中已经清晰写明了如何去发起网络请求： 文档地址：https:&#x2F;&#x2F;developers.weixin.qq.com&#x2F;miniprogram&#x2F;dev&#x2F;api&#x2F;network&#x2F;request&#x2F;wx.request.html 示例： 1234567891011121314151617181920 data">
+<meta property="og:type" content="article">
+<meta property="og:title" content="理解javascript回调函数">
+<meta property="og:url" content="https://blog.geekland.top/posts/9887.html">
+<meta property="og:site_name" content="Bambooの博客空间">
+<meta property="og:description" content="在学习到风袖小程序调用后端api的接口时候涉及到一个不可以避免的知识点，回调函数，在微信小程序开发文档中已经清晰写明了如何去发起网络请求： 文档地址：https:&#x2F;&#x2F;developers.weixin.qq.com&#x2F;miniprogram&#x2F;dev&#x2F;api&#x2F;network&#x2F;request&#x2F;wx.request.html 示例： 1234567891011121314151617181920 data">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-11-06T01:18:02.000Z">
+<meta property="article:modified_time" content="2025-11-06T15:05:37.556Z">
+<meta property="article:author" content="Bamboo">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://blog.geekland.top/posts/9887.html">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.geekland.top/posts/9887.html","path":"posts/9887.html","title":"理解javascript回调函数"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>理解javascript回调函数 | Bambooの博客空间</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Bambooの博客空间</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%97%AE%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80"><span class="nav-number">2.</span> <span class="nav-text">基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-Callback%EF%BC%9F"><span class="nav-number">2.1.</span> <span class="nav-text">什么是 Callback？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81-Callback%EF%BC%9F"><span class="nav-number">2.2.</span> <span class="nav-text">为什么需要 Callback？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9E%E8%B0%83%E5%9C%B0%E7%8B%B1%EF%BC%88Callback-Hell%EF%BC%89"><span class="nav-number">2.3.</span> <span class="nav-text">回调地狱（Callback Hell）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-Promise%EF%BC%9F"><span class="nav-number">2.4.</span> <span class="nav-text">什么是 Promise？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Promise-%E7%9A%84%E4%B8%89%E7%A7%8D%E7%8A%B6%E6%80%81%EF%BC%9A"><span class="nav-number">2.5.</span> <span class="nav-text">Promise 的三种状态：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81-Promise%EF%BC%9F"><span class="nav-number">2.6.</span> <span class="nav-text">为什么需要 Promise？</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%E5%B9%B6%E7%90%86%E8%A7%A3%E9%97%AE%E9%A2%98"><span class="nav-number">3.</span> <span class="nav-text">解决并理解问题</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Bamboo"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Bamboo</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.geekland.top/posts/9887.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Bamboo">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bambooの博客空间">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="理解javascript回调函数 | Bambooの博客空间">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          理解javascript回调函数
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2025-11-06 09:18:02 / 修改时间：23:05:37" itemprop="dateCreated datePublished" datetime="2025-11-06T09:18:02+08:00">2025-11-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A3%8E%E8%A2%96%E7%94%B5%E5%95%86%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA/" itemprop="url" rel="index"><span itemprop="name">风袖电商小程序查漏补缺</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>在学习到风袖小程序调用后端api的接口时候涉及到一个不可以避免的知识点，<strong>回调函数</strong>，在微信小程序开发文档中已经清晰写明了如何去发起网络请求：</p>
+<p>文档地址：<a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/api/network/request/wx.request.html">https://developers.weixin.qq.com/miniprogram/dev/api/network/request/wx.request.html</a></p>
+<p>示例：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"> <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">topTheme</span>: <span class="literal">null</span>,</span><br><span class="line">  &#125;,</span><br><span class="line"><span class="title function_">onLoad</span>(<span class="params">options</span>) &#123;</span><br><span class="line">    wx.<span class="title function_">request</span>(&#123;</span><br><span class="line">      <span class="attr">url</span>: <span class="string">&quot;your url&quot;</span>,</span><br><span class="line">      <span class="attr">method</span>: <span class="string">&quot;GET&quot;</span>,</span><br><span class="line">      <span class="attr">data</span>: &#123;</span><br><span class="line">        <span class="attr">names</span>: <span class="string">&quot;t-1&quot;</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="attr">header</span>: &#123;</span><br><span class="line">        <span class="attr">appkey</span>: <span class="string">&quot;yourappid&quot;</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="attr">success</span>: <span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// console.log(res);</span></span><br><span class="line">        <span class="variable language_">this</span>.<span class="title function_">setData</span>(&#123;</span><br><span class="line">          <span class="attr">topTheme</span>: res.<span class="property">data</span>[<span class="number">0</span>],</span><br><span class="line">        &#125;);  </span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+
+<p>在这个示例中，页面加载的时候发起了一次请求，请求类型是GET，携带参数是t-1，header携带的是appkey，success是成功调用接口，接口返回的数据，通过</p>
+<p>setData把后端返回的数据设置到topTheme中；</p>
+<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>在上面的示例中，一个普通的接口调用就写了多行代码，显然不合适，所以需要对其封装，以下是一个半封装好的HTTP，（因为在回调函数里面调用函数不合理，但是这不是重点，重点在于理解这个回调函数在干嘛）</p>
+<p>home.js</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// pages/home/home.js</span></span><br><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">Theme</span> &#125; <span class="keyword">from</span> <span class="string">&quot;../../model/theme&quot;</span>;</span><br><span class="line"><span class="title class_">Page</span>(&#123;</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">topTheme</span>: <span class="literal">null</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="title function_">onLoad</span>(<span class="params">options</span>) &#123;</span><br><span class="line">    <span class="title class_">Theme</span>.<span class="title function_">getHomeLocationA</span>(<span class="function">(<span class="params">data</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="variable language_">this</span>.<span class="title function_">setData</span>(&#123;</span><br><span class="line">        <span class="attr">topTheme</span>: data[<span class="number">0</span>],</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+
+<p>theme.js</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//业务对象</span></span><br><span class="line"><span class="comment">// theme、banner、spu、sku、address、user</span></span><br><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">Http</span> &#125; <span class="keyword">from</span> <span class="string">&quot;../utils/http&quot;</span>;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Theme</span> &#123;</span><br><span class="line">  <span class="comment">// 不用实例化可以直接调用</span></span><br><span class="line">  <span class="keyword">static</span> <span class="title function_">getHomeLocationA</span>(<span class="params">callback</span>) &#123;</span><br><span class="line">    <span class="title class_">Http</span>.<span class="title function_">request</span>(&#123;</span><br><span class="line">      <span class="attr">url</span>: <span class="string">&quot;theme/by/names&quot;</span>,</span><br><span class="line">      <span class="attr">data</span>: &#123;</span><br><span class="line">        <span class="attr">names</span>: <span class="string">&quot;t-1&quot;</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="attr">callback</span>: <span class="function">(<span class="params">data</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="title function_">callback</span>(data);</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 导出</span></span><br><span class="line"><span class="keyword">export</span> &#123; <span class="title class_">Theme</span> &#125;;</span><br></pre></td></tr></table></figure>
+
+<p>http.js</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; config &#125; <span class="keyword">from</span> <span class="string">&quot;../config/config&quot;</span>;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Http</span> &#123;</span><br><span class="line">  <span class="keyword">static</span> <span class="title function_">request</span>(<span class="params">&#123; url, data, callback, method = <span class="string">&quot;GET&quot;</span> &#125;</span>) &#123;</span><br><span class="line">    wx.<span class="title function_">request</span>(&#123;</span><br><span class="line">      <span class="attr">url</span>: <span class="string">`<span class="subst">$&#123;config.apiBaseUrl&#125;</span><span class="subst">$&#123;url&#125;</span>`</span>,</span><br><span class="line">      data,</span><br><span class="line">      method,</span><br><span class="line">      <span class="attr">header</span>: &#123;</span><br><span class="line">        <span class="attr">appkey</span>: config.<span class="property">appkey</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="title function_">success</span>(<span class="params">res</span>) &#123;</span><br><span class="line">        <span class="title function_">callback</span>(res.<span class="property">data</span>);</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">export</span> &#123; <span class="title class_">Http</span> &#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><p>在想理解这个问题之前，应该来学习一下基础知识。</p>
+<h2 id="什么是-Callback？"><a href="#什么是-Callback？" class="headerlink" title="什么是 Callback？"></a>什么是 Callback？</h2><p>Callback（回调）就是一个函数，它在另一个函数执行完之后被调用。在JavaScript中，函数可以被当作参数传递给另一个函数，这样我们就可以在某个操作完成之后执行这个函数。</p>
+<h2 id="为什么需要-Callback？"><a href="#为什么需要-Callback？" class="headerlink" title="为什么需要 Callback？"></a>为什么需要 Callback？</h2><p>JavaScript是单线程的，意味着它一次只能做一件事。但是，有些操作（比如网络请求、读取文件等）需要时间，如果等待它们完成，就会阻塞整个程序。所以，我们使用回调函数来处理这些异步操作：我们开始一个操作，然后继续执行其他代码，当操作完成时，回调函数就会被调用。</p>
+<p>例子：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">doHomework</span>(<span class="params">subject, callback</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`Starting my <span class="subst">$&#123;subject&#125;</span> homework.`</span>);</span><br><span class="line">  <span class="comment">// 假设写作业需要一些时间，这里用setTimeout模拟</span></span><br><span class="line">  <span class="built_in">setTimeout</span>(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`Finished my <span class="subst">$&#123;subject&#125;</span> homework.`</span>);</span><br><span class="line">    <span class="title function_">callback</span>(); <span class="comment">// 写作业完成后调用回调函数</span></span><br><span class="line">  &#125;, <span class="number">1000</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用</span></span><br><span class="line"><span class="title function_">doHomework</span>(<span class="string">&#x27;math&#x27;</span>, <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;After homework, I can play!&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Starting my math homework.</span><br><span class="line">（等待1秒）</span><br><span class="line">Finished my math homework.</span><br><span class="line">After homework, I can play!</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>定义一个doHomework函数，参数是subject和callback，当使用doHomework函数的时候，第一时间被执行的就是Starting my math homework.然后在等待1秒后执行Finished my math homework.最后在执行回调函数After homework, I can play!</p>
+</blockquote>
+<h2 id="回调地狱（Callback-Hell）"><a href="#回调地狱（Callback-Hell）" class="headerlink" title="回调地狱（Callback Hell）"></a>回调地狱（Callback Hell）</h2><p>当有多个异步操作需要顺序执行时，回调函数会嵌套在一起，形成“回调地狱”，代码难以阅读和维护。</p>
+<h2 id="什么是-Promise？"><a href="#什么是-Promise？" class="headerlink" title="什么是 Promise？"></a>什么是 Promise？</h2><p>Promise 是 JavaScript 中用于处理异步操作的对象，它代表一个异步操作的最终完成（或失败）及其结果值。</p>
+<h2 id="Promise-的三种状态："><a href="#Promise-的三种状态：" class="headerlink" title="Promise 的三种状态："></a>Promise 的三种状态：</h2><ul>
+<li>pending: 初始状态，既不是成功，也不是失败。</li>
+<li>fulfilled: 操作成功完成。</li>
+<li>rejected: 操作失败。</li>
+</ul>
+<h2 id="为什么需要-Promise？"><a href="#为什么需要-Promise？" class="headerlink" title="为什么需要 Promise？"></a>为什么需要 Promise？</h2><p>Promise 解决了回调地狱的问题，它允许我们以链式的方式编写异步代码，使代码更易读。</p>
+<h1 id="解决并理解问题"><a href="#解决并理解问题" class="headerlink" title="解决并理解问题"></a>解决并理解问题</h1>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/posts/62286.html" rel="next" title="风袖电商小程序笔记第一周【走进Web全栈工程师】">
+                  风袖电商小程序笔记第一周【走进Web全栈工程师】 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="lv-container" data-id="city" data-uid="MTAyMC82MDk3Ny8zNzQ0Nw"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">粤ICP备2024276010号-2 </a>
+      <img src="/images/%E5%A4%87%E6%A1%88%E7%BC%96%E5%8F%B7%E5%9B%BE%E6%A0%87.png" alt="">
+  </div>
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Bambooの博客空间</span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<script src="/js/third-party/comments/livere.js" defer></script>
+
+</body>
+</html>
