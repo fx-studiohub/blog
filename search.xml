@@ -1,10 +1,233 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>税务会计相关知识</title>
+    <url>/posts/35122.html</url>
+    <content><![CDATA[<h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>2025年10月开始，平台会开始报送在平台经营者7-8-9月经营数据，此后每年的1-4-7-10月会报送上个季度数据，也就是电商开始要合规交税，近一段时间也学到了不少税务相关知识，特此写下记录。</p>
+<h1 id="工商主体"><a href="#工商主体" class="headerlink" title="工商主体"></a>工商主体</h1><p>主要分为个体工商户、个人独资企业 (自然人独资)、有限责任公司（自然人独资）；区别在哪，主要从税率、发票类型、承担责任三方面展开：</p>
+<ul>
+<li><p>个体工商户就是个体经营，也可以分小规模纳税人和一般纳税人，个体商户需要缴纳增值税和个人所得税；</p>
+<p>小规模纳税人增值税季度30万内免增值税，超过按照全额的1%计算（截止2027年之前是），无法使用发票抵扣增值税，只能开普票；</p>
+<p>一般纳税人增值税没有起征点，适用6%（服务业）、9%（交通运输、建筑业）、13%（销售货物），即全额缴纳，但是有专用发票可以抵扣增值税，也可以向别人开具专票；</p>
+<p>承担责任是无限的，也就是破产了需要赔多少就多少；</p>
+<p>个人所得税按照5%-35%计算，有发票（普票或者专票）可以抵扣，下面表格是计算个人所得税；</p>
+<p>总结：每年资金流水不大的可以注册，但是资金流水大的话很不 合适，特别是这个个人所得税，至于个体工商户的一般纳税人就更不用说。</p>
+<p><strong>经营所得税率表（适用：个体工商户、个人独资企业等）</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">级数</th>
+<th align="left">全年应纳税所得额</th>
+<th align="left">税率(%)</th>
+<th align="left">速算扣除数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">不超过30000元的部分</td>
+<td align="left">5</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">超过30000元至90,000元的部分</td>
+<td align="left">10</td>
+<td align="left">1500</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">超过90,000元至300,000元的部分</td>
+<td align="left">20</td>
+<td align="left">10500</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">超过300,000元至500,000元的部分</td>
+<td align="left">30</td>
+<td align="left">40500</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">超过500,000元的部分</td>
+<td align="left">35</td>
+<td align="left">65500</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>个人独资企业 (自然人独资)也就是个人以企业的方式经营，也可以分小规模纳税人和一般纳税人，个人独资企业 需要缴纳增值税和个人所得税；</p>
+<p>小规模纳税人增值税季度30万内免增值税，超过按照全额的1%计算（截止2027年之前是），无法使用发票抵扣增值税，只能开普票；</p>
+<p>一般纳税人增值税没有起征点，适用6%（服务业）、9%（交通运输、建筑业）、13%（销售货物），即全额缴纳，但是有专用发票可以抵扣增值税，也可以向别人开具专票；</p>
+<p>承担责任是无限的，也就是破产了需要赔多少就多少；</p>
+<p>个人所得税按照5%-35%计算（经营所得，后面还有综合所得就是3%-45%），有发票（普票或者专票）可以抵扣，与个体工商户的个人所得税计算相同；</p>
+<p>个人独资企业可以升级为合伙人企业，但是不能升级为公司；</p>
+<p>适合个别特殊行业，比如律师事务所，必须有人去承担无限责任，（比如打官司给搞黄了，总不能拍拍屁股走人吧……）</p>
+<p>总结：如果不是特俗行业，或者后续不想拉人入伙，还是以个体工商户比较好</p>
+</li>
+<li><p>有限责任公司（自然人独资）也就是一个人以公司的方式经营，也可以分小规模纳税人和一般纳税人，有限责任公司需要缴纳增值税、企业所得税和个人所得税（股东分红）；</p>
+<p>小规模纳税人增值税季度30万内免增值税，超过按照全额的1%计算（截止2027年之前是），无法使用发票抵扣增值税，只能开普票；</p>
+<p>一般纳税人增值税没有起征点，适用6%（服务业）、9%（交通运输、建筑业）、13%（销售货物），即全额缴纳，但是有专用发票可以抵扣增值税，也可以向别人开具专票；</p>
+<p>承担责任是有限的，以注册资金为主（多少可以自己决定，5年内需要实缴，在和一些公司合作的时候，会去看注册资本，关于注册资本最好是实缴的方式，如果以知识产权去做抵扣有极大风险，并且在公司合作的时候发现是用知识产权去做抵扣的认为你这是虚假的）</p>
+<p>企业所得税按照5%-25%计算（小微企业5%，年利润300万内为小微企业）</p>
+<p>个人所得税（股东分红）按照固定20%缴纳，因为交完企业所得税，这个钱是属于公司的，想要到自己手里，就必须再交个人所得税，当然也可以给自己发工资的方式转到自己手里</p>
+<p>个人所得税（员工工资）：一年6万，月5000内是可以免收个人综合所得税的，<strong>超过部分</strong>就按照阶梯计算：</p>
+<p><strong>综合所得税率表（适用：工薪阶层、劳务报酬等）</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">级数</th>
+<th align="left">全年应纳税所得额</th>
+<th align="left">税率(%)</th>
+<th align="left">速算扣除数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">不超过36,000元的部分</td>
+<td align="left">3</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">超过36,000元至144,000元的部分</td>
+<td align="left">10</td>
+<td align="left">2,520</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">超过144,000元至300,000元的部分</td>
+<td align="left">20</td>
+<td align="left">16,920</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">超过300,000元至420,000元的部分</td>
+<td align="left">25</td>
+<td align="left">31,920</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">超过420,000元至660,000元的部分</td>
+<td align="left">30</td>
+<td align="left">52,920</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">超过660,000元至960,000元的部分</td>
+<td align="left">35</td>
+<td align="left">85,920</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">超过960,000元的部分</td>
+<td align="left">45</td>
+<td align="left">181,920</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<p>总结：有限责任公司可以规避一定分险，但是要多交企业所得税，个人所得税可以合理运用股东分红和工资的方式结合合规避税；</p>
+]]></content>
+      <categories>
+        <category>电商</category>
+      </categories>
+      <tags>
+        <tag>税务</tag>
+        <tag>会计</tag>
+        <tag>电商税</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>风袖电商小程序笔记第二周【LinUI组件库的引入与编程原则】</title>
     <url>/posts/43036.html</url>
     <content><![CDATA[<p>总算学完了风袖第一周课程，3天时间看完一周28节课，接下来继续！</p>
-<h1 id="优惠券的一些基本概念"><a href="#优惠券的一些基本概念" class="headerlink" title="优惠券的一些基本概念"></a>优惠券的一些基本概念</h1><h1 id="优惠券入口"><a href="#优惠券入口" class="headerlink" title="优惠券入口"></a>优惠券入口</h1><h1 id="背景颜色到底怎么设置？"><a href="#背景颜色到底怎么设置？" class="headerlink" title="背景颜色到底怎么设置？"></a>背景颜色到底怎么设置？</h1><h1 id="页面是否合并HTTP请求"><a href="#页面是否合并HTTP请求" class="headerlink" title="页面是否合并HTTP请求"></a>页面是否合并HTTP请求</h1><h1 id="函数式编程概述"><a href="#函数式编程概述" class="headerlink" title="函数式编程概述"></a>函数式编程概述</h1><h1 id="第三次作业（动态获取图片宽高）"><a href="#第三次作业（动态获取图片宽高）" class="headerlink" title="第三次作业（动态获取图片宽高）"></a>第三次作业（动态获取图片宽高）</h1><h1 id="类可以保存数据，对象可以保存状态"><a href="#类可以保存数据，对象可以保存状态" class="headerlink" title="类可以保存数据，对象可以保存状态"></a>类可以保存数据，对象可以保存状态</h1><h1 id="重构Theme获取"><a href="#重构Theme获取" class="headerlink" title="重构Theme获取"></a>重构Theme获取</h1><h1 id="第四次作业（SKU的概念和实现）"><a href="#第四次作业（SKU的概念和实现）" class="headerlink" title="第四次作业（SKU的概念和实现）"></a>第四次作业（SKU的概念和实现）</h1><h1 id="scroll-view组件灵活使用"><a href="#scroll-view组件灵活使用" class="headerlink" title="scroll-view组件灵活使用"></a>scroll-view组件灵活使用</h1><h1 id="是不是方法都需要加async和await"><a href="#是不是方法都需要加async和await" class="headerlink" title="是不是方法都需要加async和await"></a>是不是方法都需要加async和await</h1><h1 id="第五次作业（SKU和SPU的实现思路）"><a href="#第五次作业（SKU和SPU的实现思路）" class="headerlink" title="第五次作业（SKU和SPU的实现思路）"></a>第五次作业（SKU和SPU的实现思路）</h1><h1 id="spu-scroll自定义组件"><a href="#spu-scroll自定义组件" class="headerlink" title="spu-scroll自定义组件"></a>spu-scroll自定义组件</h1><h1 id="LinUI-Price价格组件应用"><a href="#LinUI-Price价格组件应用" class="headerlink" title="LinUI Price价格组件应用"></a>LinUI Price价格组件应用</h1><h1 id="周总结"><a href="#周总结" class="headerlink" title="周总结"></a>周总结</h1>]]></content>
+<h1 id="优惠券的一些基本概念"><a href="#优惠券的一些基本概念" class="headerlink" title="优惠券的一些基本概念"></a>优惠券的一些基本概念</h1><p>前端：涉及到核算，不仅仅是满100减20，比如会有以下情况：</p>
+<ul>
+<li>优惠券类型：满减、折扣、使用条件（全场券，品类券）</li>
+<li>过期，比如领取之后多少天过期</li>
+</ul>
+<p>两大概念：领取和使用</p>
+<ul>
+<li>领取:通过活动的方式领取，活动的领取时间，结束时间和在线时间；优惠券使用的范围也就是品类券，会和优惠券的Coupon绑定一起，而不是和商品的分类绑定一起</li>
+</ul>
+<h1 id="优惠券入口"><a href="#优惠券入口" class="headerlink" title="优惠券入口"></a>优惠券入口</h1><p>新建优惠券模型：</p>
+<p><code>model\activity.js</code></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">Http</span> &#125; <span class="keyword">from</span> <span class="string">&quot;../utils/http&quot;</span>;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Activity</span> &#123;</span><br><span class="line">  <span class="keyword">static</span> <span class="title class_">LocationD</span> = <span class="string">&quot;a-2&quot;</span>;</span><br><span class="line">  <span class="keyword">static</span> <span class="title function_">getHomeLocationD</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="title class_">Http</span>.<span class="title function_">request</span>(&#123;</span><br><span class="line">      <span class="attr">url</span>: <span class="string">`activity/name/<span class="subst">$&#123;Activity.LocationD&#125;</span>`</span>,</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 导出</span></span><br><span class="line"><span class="keyword">export</span> &#123; <span class="title class_">Activity</span> &#125;;</span><br></pre></td></tr></table></figure>
+
+<p><code>pages\home\home.js</code></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 页面的初始数据</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="attr">data</span>: &#123;</span><br><span class="line">   <span class="attr">themeA</span>: <span class="literal">null</span>,</span><br><span class="line">   <span class="attr">bannerB</span>: <span class="literal">null</span>,</span><br><span class="line">   <span class="attr">grid</span>: [],</span><br><span class="line">   <span class="attr">activity</span>: <span class="literal">null</span>,</span><br><span class="line"> &#125;,</span><br><span class="line"></span><br><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 生命周期函数--监听页面加载</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">async</span> <span class="title function_">onLoad</span>(<span class="params">options</span>) &#123;</span><br><span class="line">   <span class="variable language_">this</span>.<span class="title function_">initAllData</span>();</span><br><span class="line"> &#125;,</span><br><span class="line"> <span class="comment">// 初始化数据</span></span><br><span class="line"> <span class="keyword">async</span> <span class="title function_">initAllData</span>(<span class="params"></span>) &#123;</span><br><span class="line">   <span class="comment">// await去接受promise;获取顶部图片</span></span><br><span class="line">   <span class="keyword">const</span> themeA = <span class="keyword">await</span> <span class="title class_">Theme</span>.<span class="title function_">getHomeLocationA</span>();</span><br><span class="line">   <span class="comment">// 获取banner数据</span></span><br><span class="line">   <span class="keyword">const</span> bannerB = <span class="keyword">await</span> <span class="title class_">Banner</span>.<span class="title function_">getHomeLocationB</span>();</span><br><span class="line">   <span class="comment">//六宫格</span></span><br><span class="line">   <span class="keyword">const</span> grid = <span class="keyword">await</span> <span class="title class_">Category</span>.<span class="title function_">getHomeLocationC</span>();</span><br><span class="line">   <span class="comment">//优惠券入口</span></span><br><span class="line">   <span class="keyword">const</span> activity = <span class="keyword">await</span> <span class="title class_">Activity</span>.<span class="title function_">getHomeLocationD</span>();</span><br><span class="line"></span><br><span class="line">   <span class="variable language_">this</span>.<span class="title function_">setData</span>(&#123;</span><br><span class="line">     <span class="attr">themeA</span>: themeA[<span class="number">0</span>],</span><br><span class="line">     <span class="attr">bannerB</span>: bannerB,</span><br><span class="line">     <span class="attr">grid</span>: grid,</span><br><span class="line">     <span class="attr">activity</span>: activity,</span><br><span class="line">   &#125;);</span><br><span class="line"> &#125;,</span><br></pre></td></tr></table></figure>
+
+<p><code>pages\home\home.wxml</code></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment"><!-- pages/home/home.wxml --></span></span><br><span class="line"><span class="tag">&lt;<span class="name">view</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">image</span> <span class="attr">class</span>=<span class="string">&quot;top-theme&quot;</span> <span class="attr">src</span>=<span class="string">&quot;&#123;&#123;themeA.entrance_img&#125;&#125;&quot;</span> /&gt;</span></span><br><span class="line">  <span class="comment"><!-- 轮播组件，显示圆点 设置圆点颜色 自动播放 循环播放 --></span></span><br><span class="line">  <span class="tag">&lt;<span class="name">swiper</span></span></span><br><span class="line"><span class="tag">    <span class="attr">class</span>=<span class="string">&quot;swiper&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">indicator-dots</span></span></span><br><span class="line"><span class="tag">    <span class="attr">indicator-active-color</span>=<span class="string">&quot;#157658&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">autoplay</span></span></span><br><span class="line"><span class="tag">    <span class="attr">circular</span></span></span><br><span class="line"><span class="tag">  &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">block</span> <span class="attr">wx:for</span>=<span class="string">&quot;&#123;&#123;bannerB.items&#125;&#125;&quot;</span> <span class="attr">wx:key</span>=<span class="string">&quot;index&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">swiper-item</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">image</span> <span class="attr">class</span>=<span class="string">&quot;swiper&quot;</span> <span class="attr">src</span>=<span class="string">&quot;&#123;&#123;item.img&#125;&#125;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">image</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">swiper-item</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">block</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">swiper</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">s-category-grid</span> <span class="attr">grid</span>=<span class="string">&quot;&#123;&#123;grid&#125;&#125;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">s-category-grid</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">image</span> <span class="attr">class</span>=<span class="string">&quot;activity&quot;</span> <span class="attr">src</span>=<span class="string">&quot;&#123;&#123;activity.entrance_img&#125;&#125;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">image</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>pages\home\home.wxss</code></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.activity</span>&#123;</span><br><span class="line">  <span class="attribute">margin-top</span>: <span class="number">20</span>rpx;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">310</span>rpx;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="背景颜色到底怎么设置？"><a href="#背景颜色到底怎么设置？" class="headerlink" title="背景颜色到底怎么设置？"></a>背景颜色到底怎么设置？</h1><p>根据设计图可以看到每个业务对象之间是有间隔的，并且是灰色背景，当然最简单的方式就是加入view，然后设置背景颜色，但是这样的代码很冗余，这节中将设置页面的背景颜色；</p>
+<p>官方文档：<a href="https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/page.html">https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/page.html</a></p>
+<p>设置窗口的背景色：backgroundColor:#ffffff；</p>
+<p><code>pages\home\home.json</code></p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;usingComponents&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;s-category-grid&quot;</span><span class="punctuation">:</span> <span class="string">&quot;/components/category-grid/index&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">   <span class="attr">&quot;enablePullDownRefresh&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;backgroundColor&quot;</span><span class="punctuation">:</span> <span class="string">&quot;#000000&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>会发现添加了之后没用，这是因为<strong>配置的是窗体背景色</strong>，只会在<strong>下拉刷新或上拉加载时露出</strong>，而不是页面的常规背景色（enablePullDownRefresh是设置刷新）</p>
+<blockquote>
+<p>真机预览的时候，调用的API需要是https的，如果不是，需要点击预览，扫描二维码，然后在真机小程序的三个点，打开调试模式，就可以访问http的API了</p>
+</blockquote>
+<p>既然这种方式不行，试下直接的方式，直接在页面最外面的view设置backgroundColor，这种方式最直接简单，但是有以下问题需要解决：有两个缺点，一个是所有页面都需要这样写，另外背景颜色只作用于页面内容，我们需要实现的是全屏背景色</p>
+<p><code>pages\home\home.wxml</code></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">image</span> <span class="attr">class</span>=<span class="string">&quot;top-theme&quot;</span> <span class="attr">src</span>=<span class="string">&quot;&#123;&#123;themeA.entrance_img&#125;&#125;&quot;</span> /&gt;</span></span><br><span class="line">  <span class="comment"><!-- 轮播组件，显示圆点 设置圆点颜色 自动播放 循环播放 --></span></span><br><span class="line">  <span class="tag">&lt;<span class="name">swiper</span></span></span><br><span class="line"><span class="tag">    <span class="attr">class</span>=<span class="string">&quot;swiper&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">indicator-dots</span></span></span><br><span class="line"><span class="tag">    <span class="attr">indicator-active-color</span>=<span class="string">&quot;#157658&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">autoplay</span></span></span><br><span class="line"><span class="tag">    <span class="attr">circular</span></span></span><br><span class="line"><span class="tag">  &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">block</span> <span class="attr">wx:for</span>=<span class="string">&quot;&#123;&#123;bannerB.items&#125;&#125;&quot;</span> <span class="attr">wx:key</span>=<span class="string">&quot;index&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">swiper-item</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">image</span> <span class="attr">class</span>=<span class="string">&quot;swiper&quot;</span> <span class="attr">src</span>=<span class="string">&quot;&#123;&#123;item.img&#125;&#125;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">image</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">swiper-item</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">block</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">swiper</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">s-category-grid</span> <span class="attr">grid</span>=<span class="string">&quot;&#123;&#123;grid&#125;&#125;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">s-category-grid</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">image</span> <span class="attr">class</span>=<span class="string">&quot;activity&quot;</span> <span class="attr">src</span>=<span class="string">&quot;&#123;&#123;activity.entrance_img&#125;&#125;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">image</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>pages\home\home.wxss</code></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#000000</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>顶部凸显一个黑块，这是因为在<code>app.wxss</code>中也有一个container类，把他删除即可；</li>
+<li>删除之后又会发现图片与图片之间有间距，这是图片自带的间距，可以在<code>.top-theme</code>中加入<code>display: flex;</code></li>
+<li>六宫格没有设置背景色，默认是透明的，所以背景色是黑色就会变黑色，修改方式就是给六宫格设置一个白色背景色：<code>components\category-grid\index.wxss</code>文件中的<code>.container</code>加入 <code>background-color: #ffffff;</code></li>
+<li>优惠券底部也有黑色背景，解决方式一样，在<code>.activity</code>中加入<code>display: flex;</code></li>
+</ul>
+<p>最终方式：</p>
+<p><code>app.wxss</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">page&#123;</span><br><span class="line">  background-color: #f5f5f5;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这样整个小程序页面的背景色都是设置为 <code>#f5f5f5</code>，也不用单独每个页面设置，而且不仅只作用于页面内容，而是作用与整个页面</p>
+<h1 id="页面是否合并HTTP请求"><a href="#页面是否合并HTTP请求" class="headerlink" title="页面是否合并HTTP请求"></a>页面是否合并HTTP请求</h1><p>上面已经完成了优惠券入口，接下来完成每周上新这个主题；这里涉及到很多知识点，单这个每周上新的样式这周都没写完…..</p>
+<p>首先来个最正常的写法：</p>
+<p><code>model\theme.js</code></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//业务对象</span></span><br><span class="line"><span class="comment">// theme、banner、spu、sku、address、user</span></span><br><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">Http</span> &#125; <span class="keyword">from</span> <span class="string">&quot;../utils/http&quot;</span>;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Theme</span> &#123;</span><br><span class="line">  <span class="comment">// 不用实例化可以直接调用;Http.reques已经返回是一个promise，在这里直接返回就可以</span></span><br><span class="line">  <span class="comment">// 打折</span></span><br><span class="line">  <span class="keyword">static</span> <span class="title class_">LocationA</span> = <span class="string">&quot;t-1&quot;</span>;</span><br><span class="line">  <span class="keyword">static</span> <span class="title class_">LocationE</span> = <span class="string">&quot;t-2&quot;</span>;</span><br><span class="line">  <span class="keyword">static</span> <span class="title function_">getHomeLocationA</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="title class_">Http</span>.<span class="title function_">request</span>(&#123;</span><br><span class="line">      <span class="attr">url</span>: <span class="string">&quot;theme/by/names&quot;</span>,</span><br><span class="line">      <span class="attr">data</span>: &#123;</span><br><span class="line">        <span class="attr">names</span>: <span class="title class_">Theme</span>.<span class="property">LocationA</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 每周上新</span></span><br><span class="line">  <span class="keyword">static</span> <span class="title function_">getHomeLocationE</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="title class_">Http</span>.<span class="title function_">request</span>(&#123;</span><br><span class="line">      <span class="attr">url</span>: <span class="string">&quot;theme/by/names&quot;</span>,</span><br><span class="line">      <span class="attr">data</span>: &#123;</span><br><span class="line">        <span class="attr">names</span>: <span class="title class_">Theme</span>.<span class="property">LocationE</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 导出</span></span><br><span class="line"><span class="keyword">export</span> &#123; <span class="title class_">Theme</span> &#125;;</span><br></pre></td></tr></table></figure>
+
+<p><code>pages\home\home.js</code></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="title function_">onLoad</span>(<span class="params">options</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="title function_">initAllData</span>();</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">// 初始化数据</span></span><br><span class="line">  <span class="keyword">async</span> <span class="title function_">initAllData</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// await去接受promise;获取顶部图片</span></span><br><span class="line">    <span class="keyword">const</span> themeA = <span class="keyword">await</span> <span class="title class_">Theme</span>.<span class="title function_">getHomeLocationA</span>();</span><br><span class="line">    <span class="comment">// 获取banner数据</span></span><br><span class="line">    <span class="keyword">const</span> bannerB = <span class="keyword">await</span> <span class="title class_">Banner</span>.<span class="title function_">getHomeLocationB</span>();</span><br><span class="line">    <span class="comment">//六宫格</span></span><br><span class="line">    <span class="keyword">const</span> grid = <span class="keyword">await</span> <span class="title class_">Category</span>.<span class="title function_">getHomeLocationC</span>();</span><br><span class="line">    <span class="comment">//优惠券入口</span></span><br><span class="line">    <span class="keyword">const</span> activity = <span class="keyword">await</span> <span class="title class_">Activity</span>.<span class="title function_">getHomeLocationD</span>();</span><br><span class="line">    <span class="comment">// 每周上新</span></span><br><span class="line">    <span class="keyword">const</span> newweek = <span class="keyword">await</span> <span class="title class_">Theme</span>.<span class="title function_">getHomeLocationE</span>();</span><br><span class="line">    <span class="variable language_">this</span>.<span class="title function_">setData</span>(&#123;</span><br><span class="line">      <span class="attr">themeA</span>: themeA[<span class="number">0</span>],</span><br><span class="line">      <span class="attr">bannerB</span>: bannerB,</span><br><span class="line">      <span class="attr">grid</span>: grid,</span><br><span class="line">      <span class="attr">activity</span>: activity,</span><br><span class="line">      newweek,</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+
+<p>改变的地方：创建getHomeLocationE的请求，在首页调用接口；</p>
+<blockquote>
+<p>思考：在theme这个对象，getHomeLocationA和getHomeLocationE去请求的接口都是一样的，只是参数不一样，这里完全可以写成拼接的方式去合并请求数据，而不是分2次请求，多次请求会导致服务器性能下降；这里就引出了本节的重点，页面是否合并HTTP请求</p>
+</blockquote>
+<p>页面是否合并HTTP请求可以从三个方面讨论：</p>
+<p>衡量的依据：Http的请求数量；Http请求有多少次数据库查询；接口灵活性、维护性；</p>
+<ol>
+<li>全部合并：Http的请求数量是最少的，这种方式Http请求的数据库查询次数适中（每一个http都会去查询数据库，哪怕是重复的查询，但是发送一次不会重复查询，比如我3个请求都是查询A和B的数据库，因为发送3此请求所以查询了3次，但是我一个请求查询A和B的数据库，实际上我只查询了2次，把A和B的查询结果一次性返回），灵活性和维护性最低；</li>
+<li>每一个数据都发送一次请求：这种方式Http的请求数量最多，Http请求的数据库查询次数最多；灵活性和维护性高；</li>
+<li>部分合并，部分单独：上面的2种方式都有极端的操作和严重的缺点，灵活性和维护性高亦或者低；接下来这种方式是汲2种方式之所长，有选择的合并接口，比如一个业务完全可以一次得到的，就一次接口得到，业务完全不同的，就分开，这样可以提升维护性，也可以提升性能。</li>
+</ol>
+<p>说点另外的：每一次http请求并不是都会进行数据库查询，所以这部分请求影响服务器性能很小，但是会影响一定的带宽，比如成千上万的用户像该接口发起请求，有些没有权限的都会直接返回404等，没有查询数据库；影响性能的主要分为IO密集型和CPU密集型，比如数据库查询就是典型的IO操作，视频解码是CPU密集型，通常CPU密集型会放到另外服务器</p>
+<p>优化：（这里添加了另外2个主题）</p>
+<p><code>model\theme.js</code></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">  <span class="keyword">static</span> <span class="title class_">LocationA</span> = <span class="string">&quot;t-1&quot;</span>;</span><br><span class="line">  <span class="keyword">static</span> <span class="title class_">LocationE</span> = <span class="string">&quot;t-2&quot;</span>;</span><br><span class="line">  <span class="keyword">static</span> <span class="title class_">LocationF</span> = <span class="string">&quot;t-3&quot;</span>;</span><br><span class="line">  <span class="keyword">static</span> <span class="title class_">LocationH</span> = <span class="string">&quot;t-4&quot;</span>; </span><br><span class="line"><span class="comment">// 合并接口，查询主题</span></span><br><span class="line">  <span class="keyword">static</span> <span class="title function_">getThemes</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> names = <span class="string">`<span class="subst">$&#123;Theme.LocationA&#125;</span>,<span class="subst">$&#123;Theme.LocationE&#125;</span>,<span class="subst">$&#123;Theme.LocationF&#125;</span>,<span class="subst">$&#123;Theme.LocationH&#125;</span>`</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="title class_">Http</span>.<span class="title function_">request</span>(&#123;</span><br><span class="line">      <span class="attr">url</span>: <span class="string">&quot;theme/by/names&quot;</span>,</span><br><span class="line">      <span class="attr">data</span>: &#123;</span><br><span class="line">        <span class="attr">names</span>: names,</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>pages\home\home.js</code>（发送请求）</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 初始化数据</span></span><br><span class="line">  <span class="keyword">async</span> <span class="title function_">initAllData</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// await去接受promise;获取顶部图片</span></span><br><span class="line">    <span class="comment">// const themeA = await Theme.getHomeLocationA();</span></span><br><span class="line">    <span class="comment">// 获取banner数据</span></span><br><span class="line">    <span class="keyword">const</span> bannerB = <span class="keyword">await</span> <span class="title class_">Banner</span>.<span class="title function_">getHomeLocationB</span>();</span><br><span class="line">    <span class="comment">//六宫格</span></span><br><span class="line">    <span class="keyword">const</span> grid = <span class="keyword">await</span> <span class="title class_">Category</span>.<span class="title function_">getHomeLocationC</span>();</span><br><span class="line">    <span class="comment">//优惠券入口</span></span><br><span class="line">    <span class="keyword">const</span> activity = <span class="keyword">await</span> <span class="title class_">Activity</span>.<span class="title function_">getHomeLocationD</span>();</span><br><span class="line">    <span class="comment">// 每周上新</span></span><br><span class="line">    <span class="comment">// const newweek = await Theme.getHomeLocationE();</span></span><br><span class="line">    <span class="comment">// 获取主题数组</span></span><br><span class="line">    <span class="keyword">const</span> themes = <span class="keyword">await</span> <span class="title class_">Theme</span>.<span class="title function_">getThemes</span>();</span><br><span class="line">    <span class="variable language_">this</span>.<span class="title function_">setData</span>(&#123;</span><br><span class="line">      <span class="comment">// themeA: themeA[0],</span></span><br><span class="line">      <span class="attr">bannerB</span>: bannerB,</span><br><span class="line">      <span class="attr">grid</span>: grid,</span><br><span class="line">      <span class="attr">activity</span>: activity,</span><br><span class="line">      <span class="comment">// newweek,</span></span><br><span class="line">    &#125;);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>至此，接口合并完成，但是查看接口返回的数据可以发现，返回来是一个数组，显然这不能直接使用，下一小节中将解决这个问题；</p>
+<h1 id="函数式编程概述"><a href="#函数式编程概述" class="headerlink" title="函数式编程概述"></a>函数式编程概述</h1><p>在上一节中，接口返回的是一个数组，通过分析数组可以发现，每个数组都有一个names，names分别是t-1、t-2、t-3、t-4；这正好对应每一个主题，所以可以通过判断names来设置这个主题应该放在哪个位置上</p>
+<p>通过find进行函数式编程</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 获取主题数组</span></span><br><span class="line"><span class="keyword">const</span> themes = <span class="keyword">await</span> <span class="title class_">Theme</span>.<span class="title function_">getThemes</span>();</span><br><span class="line"><span class="comment">// 查询这个数组下name为t-1的数组；函数式编程</span></span><br><span class="line"><span class="keyword">const</span> themeA = themes.<span class="title function_">find</span>(<span class="function">(<span class="params">t</span>) =&gt;</span> t.<span class="property">name</span> === <span class="string">&quot;t-1&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> themeE = themes.<span class="title function_">find</span>(<span class="function">(<span class="params">t</span>) =&gt;</span> t.<span class="property">name</span> === <span class="string">&quot;t-2&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> themeF = themes.<span class="title function_">find</span>(<span class="function">(<span class="params">t</span>) =&gt;</span> t.<span class="property">name</span> === <span class="string">&quot;t-3&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> themeH = themes.<span class="title function_">find</span>(<span class="function">(<span class="params">t</span>) =&gt;</span> t.<span class="property">name</span> === <span class="string">&quot;t-4&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>themes是一个数组，find去查询每一个数组，t这个参数代表数组项，判断这个数组项里面的name是不是t-1，是的话就返回；</p>
+<p>当然，这里还不是最终态，这里写的t-1、t-2、t-3和t-4这些初看完全不知道用意，完全凭空出来的，这在后面难以维护，其实这些在theme这个类里面已经声明过了，可以直接在类里面取值，这个在类保存数据，对象保存状态这节会讲解到。</p>
+<h1 id="第三次作业（动态获取图片宽高）"><a href="#第三次作业（动态获取图片宽高）" class="headerlink" title="第三次作业（动态获取图片宽高）"></a>第三次作业（动态获取图片宽高）</h1><p>最讨厌的作业….</p>
+<p>图片有时候不是一尘不变的，比如在CMS传任意一张图片，都可以在前端保持比较好的展现</p>
+<p>微信小程序媒体组件图片组件：<a href="https://developers.weixin.qq.com/miniprogram/dev/component/image.html">https://developers.weixin.qq.com/miniprogram/dev/component/image.html</a></p>
+<h1 id="类可以保存数据，对象可以保存状态"><a href="#类可以保存数据，对象可以保存状态" class="headerlink" title="类可以保存数据，对象可以保存状态"></a>类可以保存数据，对象可以保存状态</h1><h1 id="重构Theme获取"><a href="#重构Theme获取" class="headerlink" title="重构Theme获取"></a>重构Theme获取</h1><h1 id="第四次作业（SKU的概念和实现）"><a href="#第四次作业（SKU的概念和实现）" class="headerlink" title="第四次作业（SKU的概念和实现）"></a>第四次作业（SKU的概念和实现）</h1><h1 id="scroll-view组件灵活使用"><a href="#scroll-view组件灵活使用" class="headerlink" title="scroll-view组件灵活使用"></a>scroll-view组件灵活使用</h1><h1 id="是不是方法都需要加async和await"><a href="#是不是方法都需要加async和await" class="headerlink" title="是不是方法都需要加async和await"></a>是不是方法都需要加async和await</h1><h1 id="第五次作业（SKU和SPU的实现思路）"><a href="#第五次作业（SKU和SPU的实现思路）" class="headerlink" title="第五次作业（SKU和SPU的实现思路）"></a>第五次作业（SKU和SPU的实现思路）</h1><h1 id="spu-scroll自定义组件"><a href="#spu-scroll自定义组件" class="headerlink" title="spu-scroll自定义组件"></a>spu-scroll自定义组件</h1><h1 id="LinUI-Price价格组件应用"><a href="#LinUI-Price价格组件应用" class="headerlink" title="LinUI Price价格组件应用"></a>LinUI Price价格组件应用</h1><h1 id="周总结"><a href="#周总结" class="headerlink" title="周总结"></a>周总结</h1>]]></content>
       <categories>
         <category>风袖电商小程序</category>
       </categories>
@@ -12,51 +235,6 @@
         <tag>微信小程序</tag>
         <tag>风袖</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>理解javascript回调函数</title>
-    <url>/posts/9887.html</url>
-    <content><![CDATA[<p>在学习到风袖小程序调用后端api的接口时候涉及到一个不可以避免的知识点，<strong>回调函数</strong>，在微信小程序开发文档中已经清晰写明了如何去发起网络请求：</p>
-<p>文档地址：<a href="https://developers.weixin.qq.com/miniprogram/dev/api/network/request/wx.request.html">https://developers.weixin.qq.com/miniprogram/dev/api/network/request/wx.request.html</a></p>
-<p>示例：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"> <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">topTheme</span>: <span class="literal">null</span>,</span><br><span class="line">  &#125;,</span><br><span class="line"><span class="title function_">onLoad</span>(<span class="params">options</span>) &#123;</span><br><span class="line">    wx.<span class="title function_">request</span>(&#123;</span><br><span class="line">      <span class="attr">url</span>: <span class="string">&quot;your url&quot;</span>,</span><br><span class="line">      <span class="attr">method</span>: <span class="string">&quot;GET&quot;</span>,</span><br><span class="line">      <span class="attr">data</span>: &#123;</span><br><span class="line">        <span class="attr">names</span>: <span class="string">&quot;t-1&quot;</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="attr">header</span>: &#123;</span><br><span class="line">        <span class="attr">appkey</span>: <span class="string">&quot;yourappid&quot;</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="attr">success</span>: <span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// console.log(res);</span></span><br><span class="line">        <span class="variable language_">this</span>.<span class="title function_">setData</span>(&#123;</span><br><span class="line">          <span class="attr">topTheme</span>: res.<span class="property">data</span>[<span class="number">0</span>],</span><br><span class="line">        &#125;);  </span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
-
-<p>在这个示例中，页面加载的时候发起了一次请求，请求类型是GET，携带参数是t-1，header携带的是appkey，success是成功调用接口，接口返回的数据，通过</p>
-<p>setData把后端返回的数据设置到topTheme中；</p>
-<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>在上面的示例中，一个普通的接口调用就写了多行代码，显然不合适，所以需要对其封装，以下是一个半封装好的HTTP，（因为在回调函数里面调用函数不合理，但是这不是重点，重点在于理解这个回调函数在干嘛）</p>
-<p>home.js</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// pages/home/home.js</span></span><br><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">Theme</span> &#125; <span class="keyword">from</span> <span class="string">&quot;../../model/theme&quot;</span>;</span><br><span class="line"><span class="title class_">Page</span>(&#123;</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">topTheme</span>: <span class="literal">null</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="title function_">onLoad</span>(<span class="params">options</span>) &#123;</span><br><span class="line">    <span class="title class_">Theme</span>.<span class="title function_">getHomeLocationA</span>(<span class="function">(<span class="params">data</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="variable language_">this</span>.<span class="title function_">setData</span>(&#123;</span><br><span class="line">        <span class="attr">topTheme</span>: data[<span class="number">0</span>],</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
-
-<p>theme.js</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//业务对象</span></span><br><span class="line"><span class="comment">// theme、banner、spu、sku、address、user</span></span><br><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">Http</span> &#125; <span class="keyword">from</span> <span class="string">&quot;../utils/http&quot;</span>;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Theme</span> &#123;</span><br><span class="line">  <span class="comment">// 不用实例化可以直接调用</span></span><br><span class="line">  <span class="keyword">static</span> <span class="title function_">getHomeLocationA</span>(<span class="params">callback</span>) &#123;</span><br><span class="line">    <span class="title class_">Http</span>.<span class="title function_">request</span>(&#123;</span><br><span class="line">      <span class="attr">url</span>: <span class="string">&quot;theme/by/names&quot;</span>,</span><br><span class="line">      <span class="attr">data</span>: &#123;</span><br><span class="line">        <span class="attr">names</span>: <span class="string">&quot;t-1&quot;</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="attr">callback</span>: <span class="function">(<span class="params">data</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="title function_">callback</span>(data);</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 导出</span></span><br><span class="line"><span class="keyword">export</span> &#123; <span class="title class_">Theme</span> &#125;;</span><br></pre></td></tr></table></figure>
-
-<p>http.js</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; config &#125; <span class="keyword">from</span> <span class="string">&quot;../config/config&quot;</span>;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Http</span> &#123;</span><br><span class="line">  <span class="keyword">static</span> <span class="title function_">request</span>(<span class="params">&#123; url, data, callback, method = <span class="string">&quot;GET&quot;</span> &#125;</span>) &#123;</span><br><span class="line">    wx.<span class="title function_">request</span>(&#123;</span><br><span class="line">      <span class="attr">url</span>: <span class="string">`<span class="subst">$&#123;config.apiBaseUrl&#125;</span><span class="subst">$&#123;url&#125;</span>`</span>,</span><br><span class="line">      data,</span><br><span class="line">      method,</span><br><span class="line">      <span class="attr">header</span>: &#123;</span><br><span class="line">        <span class="attr">appkey</span>: config.<span class="property">appkey</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="title function_">success</span>(<span class="params">res</span>) &#123;</span><br><span class="line">        <span class="title function_">callback</span>(res.<span class="property">data</span>);</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">export</span> &#123; <span class="title class_">Http</span> &#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><p>在想理解这个问题之前，应该来学习一下基础知识。</p>
-<h2 id="什么是-Callback？"><a href="#什么是-Callback？" class="headerlink" title="什么是 Callback？"></a>什么是 Callback？</h2><p>Callback（回调）就是一个函数，它在另一个函数执行完之后被调用。在JavaScript中，函数可以被当作参数传递给另一个函数，这样我们就可以在某个操作完成之后执行这个函数。</p>
-<h2 id="为什么需要-Callback？"><a href="#为什么需要-Callback？" class="headerlink" title="为什么需要 Callback？"></a>为什么需要 Callback？</h2><p>JavaScript是单线程的，意味着它一次只能做一件事。但是，有些操作（比如网络请求、读取文件等）需要时间，如果等待它们完成，就会阻塞整个程序。所以，我们使用回调函数来处理这些异步操作：我们开始一个操作，然后继续执行其他代码，当操作完成时，回调函数就会被调用。</p>
-<p>例子：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">doHomework</span>(<span class="params">subject, callback</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`Starting my <span class="subst">$&#123;subject&#125;</span> homework.`</span>);</span><br><span class="line">  <span class="comment">// 假设写作业需要一些时间，这里用setTimeout模拟</span></span><br><span class="line">  <span class="built_in">setTimeout</span>(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`Finished my <span class="subst">$&#123;subject&#125;</span> homework.`</span>);</span><br><span class="line">    <span class="title function_">callback</span>(); <span class="comment">// 写作业完成后调用回调函数</span></span><br><span class="line">  &#125;, <span class="number">1000</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用</span></span><br><span class="line"><span class="title function_">doHomework</span>(<span class="string">&#x27;math&#x27;</span>, <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;After homework, I can play!&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<p>输出：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Starting my math homework.</span><br><span class="line">（等待1秒）</span><br><span class="line">Finished my math homework.</span><br><span class="line">After homework, I can play!</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>定义一个doHomework函数，参数是subject和callback，当使用doHomework函数的时候，第一时间被执行的就是Starting my math homework.然后在等待1秒后执行Finished my math homework.最后在执行回调函数After homework, I can play!</p>
-</blockquote>
-<h2 id="回调地狱（Callback-Hell）"><a href="#回调地狱（Callback-Hell）" class="headerlink" title="回调地狱（Callback Hell）"></a>回调地狱（Callback Hell）</h2><p>当有多个异步操作需要顺序执行时，回调函数会嵌套在一起，形成“回调地狱”，代码难以阅读和维护。</p>
-<h2 id="什么是-Promise？"><a href="#什么是-Promise？" class="headerlink" title="什么是 Promise？"></a>什么是 Promise？</h2><p>Promise 是 JavaScript 中用于处理异步操作的对象，它代表一个异步操作的最终完成（或失败）及其结果值。</p>
-<h2 id="Promise-的三种状态："><a href="#Promise-的三种状态：" class="headerlink" title="Promise 的三种状态："></a>Promise 的三种状态：</h2><ul>
-<li>pending: 初始状态，既不是成功，也不是失败。</li>
-<li>fulfilled: 操作成功完成。</li>
-<li>rejected: 操作失败。</li>
-</ul>
-<h2 id="为什么需要-Promise？"><a href="#为什么需要-Promise？" class="headerlink" title="为什么需要 Promise？"></a>为什么需要 Promise？</h2><p>Promise 解决了回调地狱的问题，它允许我们以链式的方式编写异步代码，使代码更易读。</p>
-<h1 id="解决并理解问题"><a href="#解决并理解问题" class="headerlink" title="解决并理解问题"></a>解决并理解问题</h1>]]></content>
-      <categories>
-        <category>风袖电商小程序查漏补缺</category>
-      </categories>
   </entry>
   <entry>
     <title>风袖电商小程序笔记第一周【走进Web全栈工程师】</title>
@@ -247,11 +425,11 @@
 <h1 id="LinUI-Grid组件构建六宫格（中）"><a href="#LinUI-Grid组件构建六宫格（中）" class="headerlink" title="LinUI Grid组件构建六宫格（中）"></a>LinUI Grid组件构建六宫格（中）</h1><p>自定义组件的图片和文字是由后端决定的，那也就是这里需要发送一次请求，有两种方式，一种是在自定义组件的jS去请求接口，这样方便，另外一种是由调用方去请求接口，相对复杂一点，但是严谨，也确保自定义组件的纯粹性；这里采用第二种；</p>
 <p>创建category业务对象接口</p>
 <p><code>model\category.js</code></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">Http</span> &#125; <span class="keyword">from</span> <span class="string">&quot;../utils/http&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Category</span> &#123;</span><br><span class="line">  <span class="keyword">static</span> <span class="title function_">getGridCategory</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="title class_">Http</span>.<span class="title function_">request</span>(&#123;</span><br><span class="line">      <span class="attr">url</span>: <span class="string">&quot;category/grid/all&quot;</span>,</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">export</span> &#123; <span class="title class_">Category</span> &#125;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">Http</span> &#125; <span class="keyword">from</span> <span class="string">&quot;../utils/http&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Category</span> &#123;</span><br><span class="line">  <span class="keyword">static</span> <span class="title function_">getHomeLocationC</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="title class_">Http</span>.<span class="title function_">request</span>(&#123;</span><br><span class="line">      <span class="attr">url</span>: <span class="string">&quot;category/grid/all&quot;</span>,</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">export</span> &#123; <span class="title class_">Category</span> &#125;;</span><br></pre></td></tr></table></figure>
 
 <p>home页面发送请求</p>
 <p><code>pages\home\home.js</code></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 页面的初始数据</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="attr">data</span>: &#123;</span><br><span class="line">  <span class="attr">themeA</span>: <span class="literal">null</span>,</span><br><span class="line">  <span class="attr">bannerB</span>: <span class="literal">null</span>,</span><br><span class="line">  <span class="attr">grid</span>: [],</span><br><span class="line">&#125;,</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 生命周期函数--监听页面加载</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">async</span> <span class="title function_">onLoad</span>(<span class="params">options</span>) &#123;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="title function_">initAllData</span>();</span><br><span class="line">&#125;,</span><br><span class="line"><span class="comment">// 初始化数据</span></span><br><span class="line"><span class="keyword">async</span> <span class="title function_">initAllData</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="comment">// await去接受promise;获取顶部图片</span></span><br><span class="line">  <span class="keyword">const</span> themeA = <span class="keyword">await</span> <span class="title class_">Theme</span>.<span class="title function_">getHomeLocationA</span>();</span><br><span class="line">  <span class="comment">// 获取banner数据</span></span><br><span class="line">  <span class="keyword">const</span> bannerB = <span class="keyword">await</span> <span class="title class_">Banner</span>.<span class="title function_">getHomeLocationB</span>();</span><br><span class="line">  <span class="comment">//六宫格</span></span><br><span class="line">  <span class="keyword">const</span> grid = <span class="keyword">await</span> <span class="title class_">Category</span>.<span class="title function_">getGridCategory</span>();</span><br><span class="line">  <span class="variable language_">this</span>.<span class="title function_">setData</span>(&#123;</span><br><span class="line">    <span class="attr">themeA</span>: themeA[<span class="number">0</span>],</span><br><span class="line">    <span class="attr">bannerB</span>: bannerB,</span><br><span class="line">    <span class="attr">grid</span>: grid,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 页面的初始数据</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="attr">data</span>: &#123;</span><br><span class="line">  <span class="attr">themeA</span>: <span class="literal">null</span>,</span><br><span class="line">  <span class="attr">bannerB</span>: <span class="literal">null</span>,</span><br><span class="line">  <span class="attr">grid</span>: [],</span><br><span class="line">&#125;,</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 生命周期函数--监听页面加载</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">async</span> <span class="title function_">onLoad</span>(<span class="params">options</span>) &#123;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="title function_">initAllData</span>();</span><br><span class="line">&#125;,</span><br><span class="line"><span class="comment">// 初始化数据</span></span><br><span class="line"><span class="keyword">async</span> <span class="title function_">initAllData</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="comment">// await去接受promise;获取顶部图片</span></span><br><span class="line">  <span class="keyword">const</span> themeA = <span class="keyword">await</span> <span class="title class_">Theme</span>.<span class="title function_">getHomeLocationA</span>();</span><br><span class="line">  <span class="comment">// 获取banner数据</span></span><br><span class="line">  <span class="keyword">const</span> bannerB = <span class="keyword">await</span> <span class="title class_">Banner</span>.<span class="title function_">getHomeLocationB</span>();</span><br><span class="line">  <span class="comment">//六宫格</span></span><br><span class="line">  <span class="keyword">const</span> grid = <span class="keyword">await</span> <span class="title class_">Category</span>.<span class="title function_">getHomeLocationC</span>();</span><br><span class="line">  <span class="variable language_">this</span>.<span class="title function_">setData</span>(&#123;</span><br><span class="line">    <span class="attr">themeA</span>: themeA[<span class="number">0</span>],</span><br><span class="line">    <span class="attr">bannerB</span>: bannerB,</span><br><span class="line">    <span class="attr">grid</span>: grid,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
 
 <p>注册自定义组件：</p>
 <figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;usingComponents&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;s-category-grid&quot;</span><span class="punctuation">:</span> <span class="string">&quot;/components/category-grid/index&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
@@ -398,6 +576,9 @@
 <h2 id="方式9：（春节攻防战2-17）"><a href="#方式9：（春节攻防战2-17）" class="headerlink" title="方式9：（春节攻防战2.17）"></a>方式9：（春节攻防战2.17）</h2><p>以系列为主上架，一天2个链接，一个链接5单，一单2件。专用主要以热门机型或者新机为主。</p>
 <h1 id="同行情况"><a href="#同行情况" class="headerlink" title="同行情况"></a>同行情况</h1><p>2025年几乎都是在强付费，并且是为了那几百块的利润，愿意投入几千的付费，当然这里是说投入5000，利润5500的情况下，净利润500。这在2024年是真的不敢想，2024年在利润5500的情况下，净利润至少还有一半，可想今年的付费比例有多高。</p>
 <h1 id="风险规避"><a href="#风险规避" class="headerlink" title="风险规避"></a>风险规避</h1>]]></content>
+      <categories>
+        <category>电商</category>
+      </categories>
       <tags>
         <tag>电商</tag>
       </tags>
