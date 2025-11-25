@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>风袖电商小程序笔记第三周【热身结束，开启试炼】</title>
+    <url>/posts/1293.html</url>
+    <content><![CDATA[<p>上一周完成了首页的部分内容，这周会完成首页剩下的内容，展望到下一周就是小程序最难的部分：SKU和购物车部分；学习到这周可以明显感觉不是在赶项目进度，而是项目涉及到的内容，由这个内容做深度的一个探讨，一个功能由最简单到完善的方式演示；</p>
+<h1 id="spu-scroll自定义组件2"><a href="#spu-scroll自定义组件2" class="headerlink" title="spu-scroll自定义组件2"></a>spu-scroll自定义组件2</h1><h1 id="通过scroll-view抽象出几个编写原则"><a href="#通过scroll-view抽象出几个编写原则" class="headerlink" title="通过scroll-view抽象出几个编写原则"></a>通过scroll-view抽象出几个编写原则</h1><h1 id="WXS与小程序内核简介"><a href="#WXS与小程序内核简介" class="headerlink" title="WXS与小程序内核简介"></a>WXS与小程序内核简介</h1><h1 id="WXS与Linui-Filter的应用"><a href="#WXS与Linui-Filter的应用" class="headerlink" title="WXS与Linui Filter的应用"></a>WXS与Linui Filter的应用</h1><h1 id="Webstorm自定义代码块"><a href="#Webstorm自定义代码块" class="headerlink" title="Webstorm自定义代码块"></a>Webstorm自定义代码块</h1><h1 id="自定义组件的边距问题与外部样式类应用"><a href="#自定义组件的边距问题与外部样式类应用" class="headerlink" title="自定义组件的边距问题与外部样式类应用"></a>自定义组件的边距问题与外部样式类应用</h1><h1 id="学会抽象来简化数据库表设计"><a href="#学会抽象来简化数据库表设计" class="headerlink" title="学会抽象来简化数据库表设计"></a>学会抽象来简化数据库表设计</h1><h1 id="新监听器Observers与hot-list组件"><a href="#新监听器Observers与hot-list组件" class="headerlink" title="新监听器Observers与hot-list组件"></a>新监听器Observers与hot-list组件</h1><h1 id="flex布局灵活应用"><a href="#flex布局灵活应用" class="headerlink" title="flex布局灵活应用"></a>flex布局灵活应用</h1><h1 id="Hover点击态的应用与-import公共样式表"><a href="#Hover点击态的应用与-import公共样式表" class="headerlink" title="Hover点击态的应用与@import公共样式表"></a>Hover点击态的应用与@import公共样式表</h1><h1 id="自定义组件性的终极方案：抽象节点"><a href="#自定义组件性的终极方案：抽象节点" class="headerlink" title="自定义组件性的终极方案：抽象节点"></a>自定义组件性的终极方案：抽象节点</h1><h1 id="防抖、截流与分页细节全分析"><a href="#防抖、截流与分页细节全分析" class="headerlink" title="防抖、截流与分页细节全分析"></a>防抖、截流与分页细节全分析</h1><h1 id="paging对象1"><a href="#paging对象1" class="headerlink" title="paging对象1"></a>paging对象1</h1><h1 id="编程原则：多用return提前结束"><a href="#编程原则：多用return提前结束" class="headerlink" title="编程原则：多用return提前结束"></a>编程原则：多用return提前结束</h1><h1 id="paging对象2"><a href="#paging对象2" class="headerlink" title="paging对象2"></a>paging对象2</h1><h1 id="paging对象3"><a href="#paging对象3" class="headerlink" title="paging对象3"></a>paging对象3</h1><h1 id="第六次作业SKU预研作业"><a href="#第六次作业SKU预研作业" class="headerlink" title="第六次作业SKU预研作业"></a>第六次作业SKU预研作业</h1><h1 id="paging对象4"><a href="#paging对象4" class="headerlink" title="paging对象4"></a>paging对象4</h1><h1 id="l-water-flow抽象组件深入剖析"><a href="#l-water-flow抽象组件深入剖析" class="headerlink" title="l-water-flow抽象组件深入剖析"></a>l-water-flow抽象组件深入剖析</h1><h1 id="LinUi-Tag组件快速构建标签"><a href="#LinUi-Tag组件快速构建标签" class="headerlink" title="LinUi Tag组件快速构建标签"></a>LinUi Tag组件快速构建标签</h1><h1 id="折扣价和原价的常见错误逻辑"><a href="#折扣价和原价的常见错误逻辑" class="headerlink" title="折扣价和原价的常见错误逻辑"></a>折扣价和原价的常见错误逻辑</h1><h1 id="使用WXS解决复杂的逻辑问题"><a href="#使用WXS解决复杂的逻辑问题" class="headerlink" title="使用WXS解决复杂的逻辑问题"></a>使用WXS解决复杂的逻辑问题</h1><h1 id="瀑布流的初步成型"><a href="#瀑布流的初步成型" class="headerlink" title="瀑布流的初步成型"></a>瀑布流的初步成型</h1><h1 id="动态计算图片宽和高"><a href="#动态计算图片宽和高" class="headerlink" title="动态计算图片宽和高"></a>动态计算图片宽和高</h1><h1 id="Loding的思维逻辑：正在加载"><a href="#Loding的思维逻辑：正在加载" class="headerlink" title="Loding的思维逻辑：正在加载"></a>Loding的思维逻辑：正在加载</h1><h1 id="实现页底提示"><a href="#实现页底提示" class="headerlink" title="实现页底提示"></a>实现页底提示</h1>]]></content>
+      <categories>
+        <category>风袖电商小程序</category>
+      </categories>
+      <tags>
+        <tag>微信小程序</tag>
+        <tag>风袖</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>税务会计相关知识</title>
     <url>/posts/35122.html</url>
     <content><![CDATA[<p>2025年10月开始，平台会开始报送在平台经营者7-8-9月经营数据，此后每年的1-4-7-10月会报送上个季度数据，也就是电商开始要合规交税，近一段时间也学到了不少税务相关知识，特此写下记录。</p>
@@ -306,7 +319,7 @@
 
 <h1 id="第五次作业（SKU和SPU的实现思路）"><a href="#第五次作业（SKU和SPU的实现思路）" class="headerlink" title="第五次作业（SKU和SPU的实现思路）"></a>第五次作业（SKU和SPU的实现思路）</h1><p>又又是作业…..</p>
 <p>一句玩笑话：我花钱了是来学习的，不是来写作业的，我懂了干嘛还需要学习…..</p>
-<h1 id="spu-scroll自定义组件"><a href="#spu-scroll自定义组件" class="headerlink" title="spu-scroll自定义组件"></a>spu-scroll自定义组件</h1><p>上面已经请求到带有SPU的theme数据的接口的数据，接下来完成spu-scroll这个自定义组件的骨架：</p>
+<h1 id="spu-scroll自定义组件1"><a href="#spu-scroll自定义组件1" class="headerlink" title="spu-scroll自定义组件1"></a>spu-scroll自定义组件1</h1><p>上面已经请求到带有SPU的theme数据的接口的数据，接下来完成spu-scroll这个自定义组件的骨架：</p>
 <p>首先需要子组件接受数据：</p>
 <p><code>components\spu-scroll\index.js</code></p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">properties</span>: &#123;</span><br><span class="line">  <span class="attr">theme</span>: <span class="title class_">Object</span>,</span><br><span class="line">  <span class="attr">spuList</span>: <span class="title class_">Array</span>,</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
